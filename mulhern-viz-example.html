@@ -622,7 +622,7 @@ enter.attr("r", function(d) {
         href='http://en.wikipedia.org/wiki/Method_chaining'>method chaining</a>. Each operator in D3 returns the current
     selection, so you can apply multiple operators sequentially. For example, the above code can be rewritten:</p>
 -->
-<p>Added: 89, 144, and 233</p>
+<p>Added: 89, 144, and 233; changed colors and borders</p>
 
 <div class='chart' id='chart-10'>
 <pre class='code'>
@@ -658,8 +658,8 @@ svg.selectAll("circle")
                 .attr("y", -10)
                 .attr("width", 20)
                 .attr("height", 20)
-                .style("fill", "lightgreen")
-                .style("stroke", "green");
+                .style("fill", "lightblue")
+                .style("stroke", "darkblue");
 
         g.append("text")
                 .attr("dy", ".35em")
@@ -673,11 +673,15 @@ svg.selectAll("circle")
             g.select("rect").style("opacity", 1);
             g.select("circle").attr("r", 1e-6);
 
-            var t = g.transition().duration(750);
+            var t = g.transition().duration(1000);
             t.attr("transform", function (d, i) {
-                return "translate(" + d + ",90)";
+                return "translate(" + d + ",150)";
             });
             t.select("circle").attr("r", Math.sqrt);
+
+            t.select("circle").style("fill", "lightblue");
+            t.select("circle").style("stroke", "darkblue");
+
             t.select("rect").style("opacity", 1e-6);
         });
     })();
