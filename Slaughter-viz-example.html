@@ -74,7 +74,7 @@
 </style>
 <script type='text/javascript'>
     var data = [32, 57, 112],
-            dataEnter = data.concat(293),
+            dataEnter = data.concat(175, 210, 230, 255),
             dataExit = data.slice(0, 2),
             w = 360,
             h = 180,
@@ -131,14 +131,15 @@ var circle = svg.selectAll("circle");
         });
     })();
 </script>
-<p>Once we have a selection, we can apply various operators to the selected elements. For example, we might change the
+<p>Once we have a selection, then we can apply various operators to the selected elements. For example, we might change
+    the
     fill color using <a href='https://github.com/mbostock/d3/wiki/Selections#style'>style</a>, and the radius and the
     <em>y</em>-position using <a href='https://github.com/mbostock/d3/wiki/Selections#attr'>attr</a>:</p>
 
 <div class='chart' id='chart-3'>
 <pre class='code'>
 circle.style("fill", "steelblue");
-circle.attr("cy", 150);
+circle.attr("cy", 90);
 circle.attr("r", 30);
 </pre>
     <button>Run</button>
@@ -160,7 +161,7 @@ circle.attr("r", 30);
         d3.select("#chart-3 button").on("click", function () {
             circle.style("fill", "#aaa").attr("r", 12).attr("cy", y);
             circle.transition().duration(500).delay(0).style("fill", "steelblue");
-            circle.transition().duration(500).delay(500).attr("cy", 150);
+            circle.transition().duration(500).delay(500).attr("cy", 90);
             circle.transition().duration(500).delay(1000).attr("r", 30);
         });
     })();
@@ -393,7 +394,7 @@ circle.attr("cx", function(d, i) {
 <div class='chart' id='chart-7'>
 <pre class='code'>
 var circle = svg.selectAll("circle")
-    .data([32, 57, 112, 293]);
+    .data([32, 57, 112,.....]
 </pre>
     <button>Run</button>
 </div>
@@ -959,5 +960,6 @@ circle.exit().remove();
 <div class="foot">Copyright &copy; 2011 <a href="http://bost.ocks.org/mike">Mike Bostock</a></div>
 </div>
 </div>
+
 </body>
 </html>
