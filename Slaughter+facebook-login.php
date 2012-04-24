@@ -15,16 +15,19 @@
  * under the License.
  */
 
-require 'facebook.php';
+include 'facebook.php';
+
 
 // Create our Application instance (replace this with your appId and secret)!
 $facebook = new Facebook(array(
     'appId' => '173382036117025',
-    'secret' => 'SecretGoesHere',
+    'secret' => '91e7f450199db6ff633ee911e0399cb2',
+    'cookie' => true,
+
 ));
 
 // Get User ID
-$user = $facebook->getUser();
+$user - $facebook->getUser();
 
 // We may or may not have this data based on whether the user is logged in.
 //
@@ -42,14 +45,13 @@ if ($user) {
     }
 }
 
-
-// Login url will be needed depending on current user state.
-$loginUrl = "http://www.facebook.com/login.php";
-
-
-
-
+if ($user) {
+    $logoutUrl = $facebook->getLogoutUrl();
+} else {
+    $loginUrl = $facebook->getLogoutUrl();
+}
 ?>
+
 <html>
 
 <body>
@@ -57,9 +59,15 @@ $loginUrl = "http://www.facebook.com/login.php";
     <title>Facebook Login</title>
 </head>
 
-
+<?php if ($user): ?>
+<a href="<?php echo $logoutUrl; ?>">Logout</a>
+    <?php else: ?>
 <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
+    <?php endif ?>
 
 
 </body>
 </html>
+
+
+
