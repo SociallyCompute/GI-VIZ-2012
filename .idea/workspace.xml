@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7873b57c-cdaf-4510-9ff9-a77f495d067d" name="Default" comment="">
+    <list default="true" id="7873b57c-cdaf-4510-9ff9-a77f495d067d" name="Default" comment="This is an initial commit of a test project for INFO 655">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Brennan-viz—example.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GI-VIZ-2012.iws" />
@@ -19,51 +20,19 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="GI-VIZ-2012" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="viz-test-one.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/viz-test-one.html">
+      <file leaf-file-name="Brennan-viz—example.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Brennan-viz—example.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="viz-test-two.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/viz-test-two.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="949" column="34" selection-start="32665" selection-end="32665" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="viz-test-two_updated.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://G:/Ampps/apache/htdocs/viz-test-two_updated.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="viz-test-two_test_april18.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/viz-test-two_test_april18.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="6" selection-start="366" selection-end="366" vertical-scroll-proportion="-8.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Li_viz_example.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Li_viz_example.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="27" selection-start="246" selection-end="246" vertical-scroll-proportion="0.1969112">
+            <state line="349" column="44" selection-start="11464" selection-end="11468" vertical-scroll-proportion="0.025210084">
               <folding />
             </state>
           </provider>
@@ -92,15 +61,17 @@
       <list>
         <option value="$PROJECT_DIR$/Test/viz-test-two.html" />
         <option value="$PROJECT_DIR$/viz-test-two.html" />
+        <option value="$PROJECT_DIR$/BrennanPushTest" />
+        <option value="$PROJECT_DIR$/Brennan-viz—example.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1032" />
-    <option name="height" value="748" />
+    <option name="x" value="4" />
+    <option name="y" value="22" />
+    <option name="width" value="1276" />
+    <option name="height" value="778" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -167,10 +138,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="PublishConfig">
     <servers>
-      <server id="de213e9f-3591-404b-98f1-18195d1ea333">
+      <server id="afdcbc32-4b79-4eef-b01c-6b490be2ae6c">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" />
@@ -181,11 +153,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\PHP_project_git\GI-VIZ-2012" />
-      <recent name="G:\Ampps\apache\htdocs" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.Brennan-viz—example.html">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
@@ -193,9 +164,36 @@
       </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="Brennan-viz—example.html" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" value="file://$PROJECT_DIR$/Brennan-viz—example.html" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Brennan-viz—example.html" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <configuration useDefault="false">$USER_HOME$/.subversion_IDEA</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7873b57c-cdaf-4510-9ff9-a77f495d067d" name="Default" comment="" />
@@ -205,14 +203,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1032" height="748" extended-state="0" />
+    <frame x="4" y="22" width="1276" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980457" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26741803" sideWeight="0.67019665" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3363192" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -281,35 +279,24 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/BrennanPushTest">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="34" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viz-test-two.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.025210084" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/viz-test-one.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viz-test-two.html">
+    <entry file="file://$PROJECT_DIR$/Brennan-viz—example.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="949" column="34" selection-start="32665" selection-end="32665" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/Ampps/apache/htdocs/viz-test-two_updated.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/viz-test-two_test_april18.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="366" selection-end="366" vertical-scroll-proportion="-8.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Li_viz_example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="27" selection-start="246" selection-end="246" vertical-scroll-proportion="0.1969112">
+        <state line="349" column="44" selection-start="11464" selection-end="11468" vertical-scroll-proportion="0.025210084">
           <folding />
         </state>
       </provider>
