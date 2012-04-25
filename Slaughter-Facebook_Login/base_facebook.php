@@ -467,7 +467,6 @@ abstract class BaseFacebook
             // we've already determined this and cached the value.
             return $this->user;
         }
-
         return $this->user = $this->getUserFromAvailableData();
     }
 
