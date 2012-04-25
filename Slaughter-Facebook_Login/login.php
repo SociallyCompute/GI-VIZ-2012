@@ -57,9 +57,7 @@ if ($user) {
     //this is JS SDK load & initialization code (for the login button)
     fbAsyncInit = function () {
         FB.init({
-            appId:'173382036117025', // App ID
-            //channelUrl : 'http://localhost/channel.html', // Channel File
-            status:true, // check login status
+            appId:'APP ID' //login status
             cookie:true, // enable cookies to allow the server to access the session
             xfbml:true  // parse XFBML
         });
