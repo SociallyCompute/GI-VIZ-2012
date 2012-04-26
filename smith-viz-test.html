@@ -73,9 +73,10 @@
 
 </style>
 <script type='text/javascript'>
-    var data = [32, 57, 112, 150, 200, 250],
+    var data = [32, 57, 112],
             dataEnter = data.concat(293),
             dataExit = data.slice(0, 2),
+            dataTest = data.concat(150, 200, 250),
             w = 360,
             h = 180,
             x = d3.scale.ordinal().domain([57, 32, 112]).rangePoints([0, w], 1),
@@ -253,8 +254,8 @@ circle.data([32, 57, 112]);
         d3.select("#chart-5 button").on("click", function () {
             g
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .select("rect")
                     .style("opacity", 1);
 
@@ -313,8 +314,8 @@ circle.attr("r", function(d) {
         d3.select("#chart-6 button").on("click", function () {
             g
                     .attr("transform", function (d) {
-                return "translate(" + x(d) + "," + y(d) + ")";
-            })
+                        return "translate(" + x(d) + "," + y(d) + ")";
+                    })
                     .select("circle")
                     .attr("r", 12);
 
@@ -368,8 +369,8 @@ circle.attr("cx", function(d, i) {
         d3.select("#chart-6b button").on("click", function () {
             g
                     .attr("transform", function (d) {
-                return "translate(" + x(d) + "," + y(d) + ")";
-            })
+                        return "translate(" + x(d) + "," + y(d) + ")";
+                    })
                     .transition()
                     .duration(750)
                     .attr("transform", function (d, i) {
@@ -433,8 +434,8 @@ var circle = svg.selectAll("circle")
         d3.select("#chart-7 button").on("click", function () {
             g
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .select("rect")
                     .style("opacity", 1);
 
@@ -637,7 +638,7 @@ svg.selectAll("circle")
                 .attr("height", h);
 
         var g = svg.selectAll(".data")
-                .data(dataEnter)
+                .data(dataTest)
                 .enter().append("g")
                 .attr("class", "data")
                 .attr("transform", function (d, i) {
@@ -741,8 +742,8 @@ var circle = svg.selectAll("circle")
         d3.select("#chart-11 button").on("click", function () {
             g
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .select("rect")
                     .style("opacity", 1);
 
@@ -865,8 +866,8 @@ circle.exit().remove();
                 });
 
         var ed = gd.filter(function (d, i) {
-            return i == 2;
-        }),
+                    return i == 2;
+                }),
                 ud = gd.filter(function (d, i) {
                     return i != 2;
                 });
@@ -918,8 +919,8 @@ circle.exit().remove();
         d3.select("#chart-13 button").on("click", function () {
             gd
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .transition()
                     .duration(750)
                     .attr("transform", function (d) {
