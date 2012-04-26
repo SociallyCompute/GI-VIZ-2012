@@ -20,8 +20,8 @@ include 'facebook.php';
 
 // Create our Application instance (replace this with your appId and secret)!
 $facebook = new Facebook(array(
-    'appId' => 'APP ID',
-    'secret' => 'SECRET',
+    'appId' => '173382036117025',
+    'secret' => 'f753fc2a6ca668a4b60089837b9b56ad',
     'cookie' => true,
 
 ));
@@ -47,19 +47,17 @@ if ($user) {
 
 if ($user) {
     $logoutUrl = $facebook->getLogoutUrl(((array(
-        'next' => 'http://localhost/destroy.php',
+        'next' => 'http://localhost/Slaughter-Facebook_Login/destroy.php',
     ))));
 } else {
-    $loginUrl = $facebook->getLoginUrl();
+    $loginUrl = $facebook->getLoginUrl((array(display => page)));
 }
 ?>
 <script>
     //this is JS SDK load & initialization code (for the login button)
-    fbAsyncInit = function () {
+    window.fbAsyncInit = function () {
         FB.init({
-            appId:'173382036117025', // App ID
-            //channelUrl : 'http://localhost/channel.html', // Channel File
-            status:true, // check login status
+            appId:'173382036117025', //login status
             cookie:true, // enable cookies to allow the server to access the session
             xfbml:true  // parse XFBML
         });
@@ -90,7 +88,7 @@ if ($user) {
     <title>Facebook Login</title>
 </head>
 <?php if ($user): ?>
-<a href="<?php echo $logoutUrl; ?>">Logout</a>
+<a href="<?php echo $logoutUrl; ?>"><img src="http://static.ak.fbcdn.net/rsrc.php/z2Y31/hash/cxrz4k7j.gif"></a>
     <?php else: ?>
 <a href="<?php echo $loginUrl; ?>">
     <div class="fb-login-button"></div>
@@ -113,7 +111,6 @@ if ($user) {
 
 </body>
 </html>
-
 
 
 
