@@ -12,6 +12,7 @@
     </style>
 </head>
 <body>
+<!--Changes made to first section!!!-->
 <div class="body">
 <div class="content">
 <div class="topbar">
@@ -23,8 +24,8 @@
 <div class="sidebar">
     <h1>d3.js</h1>
 </div>
-
-<h1 id='three_little_circles'>Three Little Circles</h1>
+<!--Changed title to reflect changes-->
+<h1 id='three_little_circles'>Six Little Circles</h1>
 <style type='text/css'>
 
     .chart {
@@ -73,15 +74,17 @@
 
 </style>
 <script type='text/javascript'>
+    //Added 150, 200, and 250 to the data
     var data = [32, 57, 112, 150, 200, 250],
             dataEnter = data.concat(293),
             dataExit = data.slice(0, 2),
             w = 360,
             h = 180,
-            x = d3.scale.ordinal().domain([57, 32, 112]).rangePoints([0, w], 1),
+            x = d3.scale.ordinal().domain([57, 32, 112, 150, 200, 250]).rangePoints([0, w], 1),
             y = d3.scale.ordinal().domain(data).rangePoints([0, h], 2);
 </script>
-<p>Once upon a time, there were three little circles. This tutorial shows you how to manipulate them using
+<!--Changed three to six to reflect additional circles!!!!-->
+<p>Once upon a time, there were six little circles. This tutorial shows you how to manipulate them using
     selections.</p>
 
 <h2 id='selecting_elements'>Selecting Elements</h2>

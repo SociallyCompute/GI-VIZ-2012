@@ -73,7 +73,7 @@
 
 </style>
 <script type='text/javascript'>
-    var data = [32, 57, 112, 150, 200, 250],
+    var data = [32, 57, 112],
             dataEnter = data.concat(293),
             dataExit = data.slice(0, 2),
             w = 360,
@@ -289,6 +289,10 @@ circle.attr("r", function(d) {
     <button>Run</button>
 </div>
 <script type='text/javascript'>
+
+<!-- Assignment 3.5, add three additional data points -->
+
+    var data = [32, 57, 112, 200, 225, 250];
     (function () {
         var svg = d3.select("#chart-6").append("svg")
                 .attr("width", w)
@@ -342,6 +346,10 @@ circle.attr("cx", function(d, i) {
     <button>Run</button>
 </div>
 <script type='text/javascript'>
+
+<!-- Assignment 3.5, restore three original data points -->
+
+    var data = [32, 57, 112];
     (function () {
         var svg = d3.select("#chart-6b").append("svg")
                 .attr("width", w)

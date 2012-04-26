@@ -23,7 +23,7 @@
 <div class="sidebar">
     <h1>d3.js</h1>
 </div>
-
+/*here is a short comment*/
 <h1 id='three_little_circles'>Three Little Circles</h1>
 <style type='text/css'>
 
@@ -73,12 +73,12 @@
 
 </style>
 <script type='text/javascript'>
-    var data = [32, 57, 112, 150, 200, 250],
-            dataEnter = data.concat(293),
-            dataExit = data.slice(0, 2),
+    var data = [32, 57, 112, 80, 150, 200],
+            dataEnter = data.concat(300),
+            dataExit = data.slice(0, 5),
             w = 360,
             h = 180,
-            x = d3.scale.ordinal().domain([57, 32, 112]).rangePoints([0, w], 1),
+            x = d3.scale.ordinal().domain([57, 32, 112, 80, 150, 200]).rangePoints([0, w], 1),
             y = d3.scale.ordinal().domain(data).rangePoints([0, h], 2);
 </script>
 <p>Once upon a time, there were three little circles. This tutorial shows you how to manipulate them using
@@ -137,9 +137,9 @@ var circle = svg.selectAll("circle");
 
 <div class='chart' id='chart-3'>
 <pre class='code'>
-circle.style("fill", "steelblue");
-circle.attr("cy", 150);
-circle.attr("r", 30);
+circle.style("fill", "yellow");
+circle.attr("cy", 90);
+circle.attr("r", 25);
 </pre>
     <button>Run</button>
 </div>
@@ -159,9 +159,10 @@ circle.attr("r", 30);
 
         d3.select("#chart-3 button").on("click", function () {
             circle.style("fill", "#aaa").attr("r", 12).attr("cy", y);
-            circle.transition().duration(500).delay(0).style("fill", "steelblue");
-            circle.transition().duration(500).delay(500).attr("cy", 150);
-            circle.transition().duration(500).delay(1000).attr("r", 30);
+            circle.transition().duration(500).delay(0).style("fill", "yellow");
+            circle.transition().duration(500).delay(500).attr("cy", 90);
+            circle.transition().duration(500).delay(1000).attr("r", 25);
+            circle.transition().duration(500).delay(2000).attr("cy", 60);
         });
     })();
 </script>
@@ -188,7 +189,7 @@ circle.attr("cx", function() {
                 .attr("class", "little")
                 .attr("cx", x)
                 .attr("cy", y)
-                .attr("r", 12);
+                .attr("r", 8);
 
         d3.select("#chart-4 button").on("click", function () {
             circle.transition()
@@ -213,7 +214,7 @@ circle.attr("cx", function() {
 
 <div class='chart' id='chart-5'>
 <pre class='code'>
-circle.data([32, 57, 112]);
+circle.data([32, 57, 112, 80, 150, 200]);
 </pre>
     <button>Run</button>
 </div>
@@ -336,7 +337,7 @@ circle.attr("r", function(d) {
 <div class='chart' id='chart-6b'>
 <pre class='code'>
 circle.attr("cx", function(d, i) {
-  return i * 100 + 30;
+  return i * 10 + 30;
 });
 </pre>
     <button>Run</button>
@@ -373,7 +374,7 @@ circle.attr("cx", function(d, i) {
                     .transition()
                     .duration(750)
                     .attr("transform", function (d, i) {
-                        return "translate(" + (i * 100 + 30) + "," + y(d) + ")";
+                        return "translate(" + (i * 10 + 30) + "," + y(d) + ")";
                     });
         });
     })();
@@ -387,13 +388,13 @@ circle.attr("cx", function(d, i) {
 <p>But what if we had <em>four</em> numbers to display, rather than three? We wouldn&#8217;t have enough circles to
     display all the numbers. When joining data to elements, D3 stores the leftover data in the <a
             href='https://github.com/mbostock/d3/wiki/Selections#enter'>enter</a> selection. (The terms &#8220;enter&#8221;
-    and &#8220;exit&#8221; are adopted from stage terminology.) Here, the fourth number 293 remains in the enter
+    and &#8220;exit&#8221; are adopted from stage terminology.) Here, the fourth number 500 remains in the enter
     selection, because we only have three circle elements:</p>
 
 <div class='chart' id='chart-7'>
 <pre class='code'>
 var circle = svg.selectAll("circle")
-    .data([32, 57, 112, 293]);
+    .data([32, 57, 112, 80, 150, 200, 300]);
 </pre>
     <button>Run</button>
 </div>
@@ -440,7 +441,7 @@ var circle = svg.selectAll("circle")
 
             g.filter(
                     function (d, i) {
-                        return i != 3;
+                        return i != 6;
                     }).transition()
                     .duration(750)
                     .attr("transform", function (d) {
@@ -450,7 +451,7 @@ var circle = svg.selectAll("circle")
                     .style("opacity", 1e-6);
 
             g.select("rect").filter(function (d, i) {
-                return i == 3;
+                return i == 6;
             })
                     .style("fill", "#eee")
                     .style("stroke", "#ccc")
@@ -470,7 +471,7 @@ var enter = circle.enter().append("circle");
 
 enter.attr("cy", 90);
 
-enter.attr("cx", 160);
+enter.attr("cx", 90);
 
 enter.attr("r", function(d) {
   return Math.sqrt(d);
@@ -508,7 +509,7 @@ enter.attr("r", function(d) {
                     return "translate(" + 20 * (i + 1) + ",20)";
                 })
                 .filter(function (d, i) {
-                    return i == 3;
+                    return i == 6;
                 });
 
         g.append("circle")
@@ -622,7 +623,7 @@ enter.attr("r", function(d) {
 <div class='chart' id='chart-10'>
 <pre class='code'>
 svg.selectAll("circle")
-    .data([32, 57, 112, 293])
+    .data([32, 57, 112, 80, 150, 200, 300])
   .enter().append("circle")
     .attr("cy", 90)
     .attr("cx", String)
@@ -698,7 +699,7 @@ svg.selectAll("circle")
 <div class='chart' id='chart-11'>
 <pre class='code'>
 var circle = svg.selectAll("circle")
-    .data([32, 57]);
+    .data([32, 57, 112, 80, 150]);
 </pre>
     <button>Run</button>
 </div>
@@ -716,7 +717,7 @@ var circle = svg.selectAll("circle")
                 .attr("cy", y)
                 .attr("r", 12)
                 .filter(function (d, i) {
-                    return i == 2;
+                    return i == 5;
                 });
 
         var g = svg.selectAll(".data")
@@ -796,7 +797,7 @@ circle.exit().remove();
                 .text(String);
 
         g = g.filter(function (d, i) {
-            return i == 2;
+            return i == 5;
         });
 
         g.select("circle")
@@ -839,7 +840,7 @@ circle.exit().remove();
 <div class='chart' id='chart-13'>
 <pre class='code'>
 var circle = svg.selectAll("circle")
-    .data([32, 57, 293], String);
+    .data([32, 57, 500], String);
 
 circle.enter().append("circle")
     .attr("cy", 90)
@@ -959,5 +960,6 @@ circle.exit().remove();
 <div class="foot">Copyright &copy; 2011 <a href="http://bost.ocks.org/mike">Mike Bostock</a></div>
 </div>
 </div>
+
 </body>
 </html>
