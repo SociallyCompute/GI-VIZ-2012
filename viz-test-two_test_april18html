@@ -138,7 +138,7 @@ var circle = svg.selectAll("circle");
 <div class='chart' id='chart-3'>
 <pre class='code'>
 circle.style("fill", "steelblue");
-circle.attr("cy", 150);
+circle.attr("cy", 90);
 circle.attr("r", 30);
 </pre>
     <button>Run</button>
@@ -160,7 +160,7 @@ circle.attr("r", 30);
         d3.select("#chart-3 button").on("click", function () {
             circle.style("fill", "#aaa").attr("r", 12).attr("cy", y);
             circle.transition().duration(500).delay(0).style("fill", "steelblue");
-            circle.transition().duration(500).delay(500).attr("cy", 150);
+            circle.transition().duration(500).delay(500).attr("cy", 90);
             circle.transition().duration(500).delay(1000).attr("r", 30);
         });
     })();
@@ -959,5 +959,6 @@ circle.exit().remove();
 <div class="foot">Copyright &copy; 2011 <a href="http://bost.ocks.org/mike">Mike Bostock</a></div>
 </div>
 </div>
+
 </body>
 </html>
