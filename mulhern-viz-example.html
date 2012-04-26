@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <title>d3.js ~ Three Little Circles</title>
+    <title>Mulhern Viz Example</title>
     <script type="text/javascript" src="css/d3.v2.js?2.8.1"></script>
     <style type="text/css">
 
@@ -12,7 +12,6 @@
     </style>
 </head>
 <body>
-<!--Changes made to first section!!!-->
 <div class="body">
 <div class="content">
 <div class="topbar">
@@ -24,8 +23,8 @@
 <div class="sidebar">
     <h1>d3.js</h1>
 </div>
-<!--Changed title to reflect changes-->
-<h1 id='three_little_circles'>Six Little Circles</h1>
+
+<h1 id='three_little_circles'>Three Little Circles - Mulhern</h1>
 <style type='text/css'>
 
     .chart {
@@ -73,19 +72,20 @@
     }
 
 </style>
+
 <script type='text/javascript'>
-    //Added 150, 200, and 250 to the data
-    var data = [32, 57, 112, 150, 200, 250],
+    var data = [32, 57, 112, 89, 144, 233], //Added 89, 144, and 233 to the visualization
             dataEnter = data.concat(293),
             dataExit = data.slice(0, 2),
             w = 360,
             h = 180,
-            x = d3.scale.ordinal().domain([57, 32, 112, 150, 200, 250]).rangePoints([0, w], 1),
+            x = d3.scale.ordinal().domain([57, 32, 112]).rangePoints([0, w], 1),
             y = d3.scale.ordinal().domain(data).rangePoints([0, h], 2);
 </script>
-<!--Changed three to six to reflect additional circles!!!!-->
-<p>Once upon a time, there were six little circles. This tutorial shows you how to manipulate them using
+<!--
+<p>Once upon a time, there were three little circles. This tutorial shows you how to manipulate them using
     selections.</p>
+
 
 <h2 id='selecting_elements'>Selecting Elements</h2>
 
@@ -141,7 +141,7 @@ var circle = svg.selectAll("circle");
 <div class='chart' id='chart-3'>
 <pre class='code'>
 circle.style("fill", "steelblue");
-circle.attr("cy", 150);
+circle.attr("cy", 90);
 circle.attr("r", 30);
 </pre>
     <button>Run</button>
@@ -163,7 +163,7 @@ circle.attr("r", 30);
         d3.select("#chart-3 button").on("click", function () {
             circle.style("fill", "#aaa").attr("r", 12).attr("cy", y);
             circle.transition().duration(500).delay(0).style("fill", "steelblue");
-            circle.transition().duration(500).delay(500).attr("cy", 150);
+            circle.transition().duration(500).delay(500).attr("cy", 90);
             circle.transition().duration(500).delay(1000).attr("r", 30);
         });
     })();
@@ -621,11 +621,18 @@ enter.attr("r", function(d) {
 <p>Another technique you can use to make your code more concise is <a
         href='http://en.wikipedia.org/wiki/Method_chaining'>method chaining</a>. Each operator in D3 returns the current
     selection, so you can apply multiple operators sequentially. For example, the above code can be rewritten:</p>
+-->
+<p>Added: 89, 144, and 233</p>
+
+<p>Changed: colors and borders to light and dark blue; end position of circle transformation; duration of circle
+    transformation</p>
+
+<p>Note: I commented out all other examples</p>
 
 <div class='chart' id='chart-10'>
 <pre class='code'>
 svg.selectAll("circle")
-    .data([32, 57, 112, 293])
+    .data([32, 57, 112, 89, 144, 233, 293])
   .enter().append("circle")
     .attr("cy", 90)
     .attr("cx", String)
@@ -656,8 +663,8 @@ svg.selectAll("circle")
                 .attr("y", -10)
                 .attr("width", 20)
                 .attr("height", 20)
-                .style("fill", "lightgreen")
-                .style("stroke", "green");
+                .style("fill", "lightblue")
+                .style("stroke", "darkblue");
 
         g.append("text")
                 .attr("dy", ".35em")
@@ -671,15 +678,21 @@ svg.selectAll("circle")
             g.select("rect").style("opacity", 1);
             g.select("circle").attr("r", 1e-6);
 
-            var t = g.transition().duration(750);
+            var t = g.transition().duration(1000);
             t.attr("transform", function (d, i) {
-                return "translate(" + d + ",90)";
+                return "translate(" + d + ",150)";
             });
             t.select("circle").attr("r", Math.sqrt);
+
+            t.select("circle").style("fill", "lightblue");
+            t.select("circle").style("stroke", "darkblue");
+
             t.select("rect").style("opacity", 1e-6);
         });
     })();
 </script>
+
+<!--
 <p>As you can see, the code is made even smaller using built-in JavaScript functions, rather than defining anonymous
     ones. The built-in <a href='https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String'>String</a>
     method, for example, is a shorthand way of using JavaScript&#8217;s default string conversion to compute the
@@ -960,6 +973,10 @@ circle.exit().remove();
 
 </div>
 <div class="foot">Copyright &copy; 2011 <a href="http://bost.ocks.org/mike">Mike Bostock</a></div>
+</div>
+</div>
+
+-->
 </div>
 </div>
 </body>
