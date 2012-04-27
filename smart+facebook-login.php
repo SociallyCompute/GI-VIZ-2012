@@ -1,78 +1,104 @@
 <?php
 /**
- * Created by JetBrains PhpStorm.
- * User: smarap
- * Date: 4/22/12
- * Time: 9:03 PM
- * To change this template use File | Settings | File Templates.
+ * Copyright 2011 Facebook, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may
+ * not use this file except in compliance with the License. You may obtain
+ * a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations
+ * under the License.
  */
 
-/** *
- * Copyright 2011 Facebook, Inc. * *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may *
- * not use this file except in compliance with the License. You may obtain *
- * a copy of the License at * *     http://www.apache.org/licenses/LICENSE-2.0 * *
- * Unless required by applicable law or agreed to in writing, software *
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT *
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the *
- * License for the specific language governing permissions and limitations *
- * under the License. */
-require_once "base_facebook.php";
-/** *
- * Extends the BaseFacebook class with the intent of using * PHP sessions to store user ids and access tokens. */
-class Facebook extends BaseFacebook
-{
-    /**     * Identical to the parent constructor, except that     * we start a PHP session to store the user ID and     * access token if during the course of execution     * we discover them.     *     * @param Array $config the application configuration.     * @see BaseFacebook::__construct in facebook.php     */
-    public function __construct($config)
-    {
-        if (!session_id()) {
-            session_start();
-        }
-        parent::__construct($config);
-    }
+require '../src/facebook.php';
 
-    protected static $kSupportedKeys = array('state', 'code', 'access_token', 'user_id');
+// Create our Application instance (replace this with your appId and secret).
+$facebook = new Facebook(array(
+    'appId' => '344617158898614',
+    'secret' => '6dc8ac871858b34798bc2488200e503d',
+));
 
-    /**     * Provides the implementations of the inherited abstract     * methods.  The implementation uses PHP sessions to maintain     * a store for authorization codes, user ids, CSRF states, and     * access tokens.     */
-    protected function setPersistentData($key, $value)
-    {
-        if (!in_array($key, self::$kSupportedKeys)) {
-            self::errorLog('Unsupported key passed to setPersistentData.');
-            return;
-        }
-        $session_var_name = $this->constructSessionVariableName($key);
-        $_SESSION[$session_var_name] = $value;
-    }
+// Get User ID
+$user = $facebook->getUser();
 
-    protected function getPersistentData($key, $default = false)
-    {
-        if (!in_array($key, self::$kSupportedKeys)) {
-            self::errorLog('Unsupported key passed to getPersistentData.');
-            return $default;
-        }
-        $session_var_name = $this->constructSessionVariableName($key);
-        return isset($_SESSION[$session_var_name]) ? $_SESSION[$session_var_name] : $default;
-    }
+// We may or may not have this data based on whether the user is logged in.
+//
+// If we have a $user id here, it means we know the user is logged into
+// Facebook, but we don't know if the access token is valid. An access
+// token is invalid if the user logged out of Facebook.
 
-    protected function clearPersistentData($key)
-    {
-        if (!in_array($key, self::$kSupportedKeys)) {
-            self::errorLog('Unsupported key passed to clearPersistentData.');
-            return;
-        }
-        $session_var_name = $this->constructSessionVariableName($key);
-        unset($_SESSION[$session_var_name]);
-    }
-
-    protected function clearAllPersistentData()
-    {
-        foreach (self::$kSupportedKeys as $key) {
-            $this->clearPersistentData($key);
-        }
-    }
-
-    protected function constructSessionVariableName($key)
-    {
-        return implode('_', array('fb', $this->getAppId(), $key));
+if ($user) {
+    try {
+        // Proceed knowing you have a logged in user who's authenticated.
+        $user_profile = $facebook->api('/me');
+    } catch (FacebookApiException $e) {
+        error_log($e);
+        $user = null;
     }
 }
+
+// Login or logout url will be needed depending on current user state.
+if ($user) {
+    $logoutUrl = $facebook->getLogoutUrl();
+} else {
+    $loginUrl = $facebook->getLoginUrl();
+}
+
+// This call will always work since we are fetching public data.
+$naitik = $facebook->api('/naitik');
+
+?>
+<!doctype html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <title>php-sdk</title>
+    <style>
+        body {
+            font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+        }
+
+        h1 a {
+            text-decoration: none;
+            color: #3b5998;
+        }
+
+        h1 a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h1>php-sdk</h1>
+
+<?php if ($user): ?>
+<a href="<?php echo $logoutUrl; ?>">Logout</a>
+    <?php else: ?>
+<div>
+    Login using OAuth 2.0 handled by the PHP SDK:
+    <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
+</div>
+    <?php endif ?>
+
+<h3>PHP Session</h3>
+<pre><?php print_r($_SESSION); ?></pre>
+
+<?php if ($user): ?>
+<h3>You</h3>
+<img src="https://graph.facebook.com/<?php echo $user; ?>/picture">
+
+<h3>Your User Object (/me)</h3>
+<pre><?php print_r($user_profile); ?></pre>
+    <?php else: ?>
+<strong><em>You are not Connected.</em></strong>
+    <?php endif ?>
+
+<h3>Public profile of Naitik</h3>
+<img src="https://graph.facebook.com/naitik/picture">
+<?php echo $naitik['name']; ?>
+</body>
+</html>
