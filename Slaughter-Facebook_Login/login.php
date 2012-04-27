@@ -20,14 +20,14 @@ include 'facebook.php';
 
 // Create our Application instance (replace this with your appId and secret)!
 $facebook = new Facebook(array(
-    'appId' => '173382036117025',
-    'secret' => '91e7f450199db6ff633ee911e0399cb2',
+    'appId' => 'APP ID',
+    'secret' => 'SECRET',
     'cookie' => true,
 
 ));
 
 // Get User ID
-$user - $facebook->getUser();
+$user = $facebook->getUser();
 
 // We may or may not have this data based on whether the user is logged in.
 //
@@ -46,28 +46,72 @@ if ($user) {
 }
 
 if ($user) {
-    $logoutUrl = $facebook->getLogoutUrl();
+    $logoutUrl = $facebook->getLogoutUrl(((array(
+        'next' => 'http://localhost/destroy.php',
+    ))));
 } else {
-    $loginUrl = $facebook->getLogoutUrl();
+    $loginUrl = $facebook->getLoginUrl();
 }
 ?>
+<script>
+    //this is JS SDK load & initialization code (for the login button)
+    fbAsyncInit = function () {
+        FB.init({
+            appId:'APP ID' //login status
+            cookie:true, // enable cookies to allow the server to access the session
+            xfbml:true  // parse XFBML
+        });
+
+        // Additional initialization code here
+    };
+
+    // Load the SDK Asynchronously
+    (function (d) {
+        var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement('script');
+        js.id = id;
+        js.async = true;
+        js.src = "//connect.facebook.net/en_US/all.js";
+        ref.parentNode.insertBefore(js, ref);
+    }(document));
+</script>
 
 <html>
 
 <body>
+<div id="fb-root"></div>
+
 <head>
     <title>Facebook Login</title>
 </head>
-
 <?php if ($user): ?>
 <a href="<?php echo $logoutUrl; ?>">Logout</a>
     <?php else: ?>
-<a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
+<a href="<?php echo $loginUrl; ?>">
+    <div class="fb-login-button"></div>
+</a>
+    <?php endif ?>
+
+<p></p>
+
+<?php if ($user): ?>
+<h3>You</h3>
+<img src="https://graph.facebook.com/<?php echo $user; ?>/picture">
+    <?php echo $user; ?>
+
+<h3>Your User Object (/me)</h3>
+<pre><?php print_r($user_profile); ?></pre>
+    <?php else: ?>
+<strong><em>You are not Connected.</em></strong>
     <?php endif ?>
 
 
 </body>
 </html>
+
 
 
 

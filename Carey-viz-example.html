@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <title>d3.js ~ Six Little Solid Black Filled Circles</title>
+    <title>d3.js ~ Three Little Circles</title>
     <script type="text/javascript" src="css/d3.v2.js?2.8.1"></script>
     <style type="text/css">
 
@@ -25,7 +24,7 @@
     <h1>d3.js</h1>
 </div>
 
-<h1 id='six_little_circles'>Six Little Circles</h1>
+<h1 id='three_little_circles'>Three Little Circles</h1>
 <style type='text/css'>
 
     .chart {
@@ -54,10 +53,10 @@
         width: 340px;
     }
 
-    .chart circle.big {
-        fill: #ggg;
+    .chart circle.little {
+        fill: #aaa;
         stroke: #666;
-        stroke-width: 6.0px;
+        stroke-width: 1.5px;
     }
 
     .chart button {
@@ -74,15 +73,15 @@
 
 </style>
 <script type='text/javascript'>
-    var data = [32, 40, 57, 100, 112, 224],
+    var data = [32, 57, 112],
             dataEnter = data.concat(293),
             dataExit = data.slice(0, 2),
             w = 360,
             h = 180,
-            x = d3.scale.ordinal().domain([40, 57, 100, 32, 112, 224]).rangePoints([0, w], 1),
+            x = d3.scale.ordinal().domain([57, 32, 112]).rangePoints([0, w], 1),
             y = d3.scale.ordinal().domain(data).rangePoints([0, h], 2);
 </script>
-<p>Once upon a time, there were four little circles. This tutorial shows you how to manipulate them using
+<p>Once upon a time, there were three little circles. This tutorial shows you how to manipulate them using
     selections.</p>
 
 <h2 id='selecting_elements'>Selecting Elements</h2>
@@ -206,6 +205,8 @@ circle.attr("cx", function() {
 
 <h2 id='binding_data'>Binding Data</h2>
 
+<h1>Matthew Carey - modified the first visualization below to add three data points </h1>
+
 <p>This is beginning to look a lot like <a href='http://jquery.com/'>jQuery</a>. More commonly, though, we want to use
     <em>data</em> to drive the appearance of our circles. To do that, we need some data. For the sake of example, let&#8217;s
     imagine that each of these circles represents a number: 32, 57 and 112. The <a
@@ -214,12 +215,16 @@ circle.attr("cx", function() {
 
 <div class='chart' id='chart-5'>
 <pre class='code'>
-circle.data([32, 57, 112]);
+circle.data([32, 57, 112, 150, 200, 250]);
 </pre>
     <button>Run</button>
 </div>
 <script type='text/javascript'>
     (function () {
+        // 2012-04-24 Matthew Carey - modified function to use 'mydata' array as data source
+        //mydata = '';
+        //mydata = [32, 57, 112, 150, 200, 250];
+        data = data.concat(150, 200, 250);
         var svg = d3.select("#chart-5").append("svg")
                 .attr("width", w)
                 .attr("height", h);
@@ -268,6 +273,10 @@ circle.data([32, 57, 112]);
                     .style("opacity", 1e-6);
         });
     })();
+
+    // 2012-04-25 MC - maybe not necessary but I set data back to the original
+    data = '';
+    data = [32, 57, 112];
 </script>
 <p>All data in D3 is specified as an array of values. Conveniently, this mirrors the concept of a selection, which is
     just an array of elements. Notice then how the first number (the first <em>datum</em>, 32) is bound to the first

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <title>d3.js ~ Six Little Solid Black Filled Circles</title>
+    <title>d3.js ~ Three Little Circles</title>
     <script type="text/javascript" src="css/d3.v2.js?2.8.1"></script>
     <style type="text/css">
 
@@ -25,12 +24,12 @@
     <h1>d3.js</h1>
 </div>
 
-<h1 id='six_little_circles'>Six Little Circles</h1>
+<h1 id='three_little_circles'>Three Little Circles - Manipulating Circle Data</h1>
 <style type='text/css'>
 
     .chart {
-        background: #fff;
-        border: solid 1px #ddd;
+        background: #aaa;
+        border: solid 1px #aaa;
         box-shadow: 0 0 4px rgba(0, 0, 0, .2);
         font: 10px sans-serif;
         height: 180px;
@@ -54,10 +53,10 @@
         width: 340px;
     }
 
-    .chart circle.big {
-        fill: #ggg;
+    .chart circle.little {
+        fill: #ddd;
         stroke: #666;
-        stroke-width: 6.0px;
+        stroke-width: 1.5px;
     }
 
     .chart button {
@@ -74,15 +73,15 @@
 
 </style>
 <script type='text/javascript'>
-    var data = [32, 40, 57, 100, 112, 224],
+    var data = [32, 57, 112, 300],
             dataEnter = data.concat(293),
             dataExit = data.slice(0, 2),
             w = 360,
             h = 180,
-            x = d3.scale.ordinal().domain([40, 57, 100, 32, 112, 224]).rangePoints([0, w], 1),
+            x = d3.scale.ordinal().domain([57, 32, 112, 300]).rangePoints([0, w], 1),
             y = d3.scale.ordinal().domain(data).rangePoints([0, h], 2);
 </script>
-<p>Once upon a time, there were four little circles. This tutorial shows you how to manipulate them using
+<p>Once upon a time, there were three little circles. This tutorial shows you how to manipulate them using
     selections.</p>
 
 <h2 id='selecting_elements'>Selecting Elements</h2>
@@ -122,7 +121,7 @@ var circle = svg.selectAll("circle");
                     .attr("cy", y)
                     .attr("r", 60)
                     .style("fill", "none")
-                    .style("stroke", "red")
+                    .style("stroke", "green")
                     .style("stroke-opacity", 1e-6)
                     .style("stroke-width", 3)
                     .transition()
@@ -138,8 +137,8 @@ var circle = svg.selectAll("circle");
 
 <div class='chart' id='chart-3'>
 <pre class='code'>
-circle.style("fill", "steelblue");
-circle.attr("cy", 150);
+circle.style("fill", "yellow");
+circle.attr("cy", 90);
 circle.attr("r", 30);
 </pre>
     <button>Run</button>
@@ -160,8 +159,8 @@ circle.attr("r", 30);
 
         d3.select("#chart-3 button").on("click", function () {
             circle.style("fill", "#aaa").attr("r", 12).attr("cy", y);
-            circle.transition().duration(500).delay(0).style("fill", "steelblue");
-            circle.transition().duration(500).delay(500).attr("cy", 150);
+            circle.transition().duration(500).delay(0).style("fill", "yellow");
+            circle.transition().duration(500).delay(500).attr("cy", 90);
             circle.transition().duration(500).delay(1000).attr("r", 30);
         });
     })();
@@ -214,7 +213,7 @@ circle.attr("cx", function() {
 
 <div class='chart' id='chart-5'>
 <pre class='code'>
-circle.data([32, 57, 112]);
+circle.data([32, 57, 112, 300]);
 </pre>
     <button>Run</button>
 </div>
@@ -394,7 +393,7 @@ circle.attr("cx", function(d, i) {
 <div class='chart' id='chart-7'>
 <pre class='code'>
 var circle = svg.selectAll("circle")
-    .data([32, 57, 112, 293]);
+    .data([32, 57, 112, 293, 300]);
 </pre>
     <button>Run</button>
 </div>
@@ -840,7 +839,7 @@ circle.exit().remove();
 <div class='chart' id='chart-13'>
 <pre class='code'>
 var circle = svg.selectAll("circle")
-    .data([32, 57, 293], String);
+    .data([11, 32, 57, 293], String);
 
 circle.enter().append("circle")
     .attr("cy", 90)
@@ -960,5 +959,6 @@ circle.exit().remove();
 <div class="foot">Copyright &copy; 2011 <a href="http://bost.ocks.org/mike">Mike Bostock</a></div>
 </div>
 </div>
+
 </body>
 </html>

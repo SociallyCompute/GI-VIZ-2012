@@ -12,6 +12,7 @@
     </style>
 </head>
 <body>
+<!--Changes made to first section!!!-->
 <div class="body">
 <div class="content">
 <div class="topbar">
@@ -23,7 +24,7 @@
 <div class="sidebar">
     <h1>d3.js</h1>
 </div>
-
+<!--Changed title to reflect changes-->
 <h1 id='three_little_circles'>Six Little Circles</h1>
 <style type='text/css'>
 
@@ -73,14 +74,16 @@
 
 </style>
 <script type='text/javascript'>
-    var data = [32, 57, 112, 180, 215, 250],
+    //Added 150, 200, and 250 to the data
+    var data = [32, 57, 112, 150, 200, 250],
             dataEnter = data.concat(293),
             dataExit = data.slice(0, 2),
             w = 360,
             h = 180,
-            x = d3.scale.ordinal().domain([57, 32, 112, 180, 215, 250]).rangePoints([0, w], 1),
+            x = d3.scale.ordinal().domain([57, 32, 112, 150, 200, 250]).rangePoints([0, w], 1),
             y = d3.scale.ordinal().domain(data).rangePoints([0, h], 2);
 </script>
+<!--Changed three to six to reflect additional circles!!!!-->
 <p>Once upon a time, there were six little circles. This tutorial shows you how to manipulate them using
     selections.</p>
 
@@ -138,7 +141,7 @@ var circle = svg.selectAll("circle");
 <div class='chart' id='chart-3'>
 <pre class='code'>
 circle.style("fill", "steelblue");
-circle.attr("cy", 90);
+circle.attr("cy", 150);
 circle.attr("r", 30);
 </pre>
     <button>Run</button>
@@ -160,7 +163,7 @@ circle.attr("r", 30);
         d3.select("#chart-3 button").on("click", function () {
             circle.style("fill", "#aaa").attr("r", 12).attr("cy", y);
             circle.transition().duration(500).delay(0).style("fill", "steelblue");
-            circle.transition().duration(500).delay(500).attr("cy", 90);
+            circle.transition().duration(500).delay(500).attr("cy", 150);
             circle.transition().duration(500).delay(1000).attr("r", 30);
         });
     })();
@@ -959,6 +962,5 @@ circle.exit().remove();
 <div class="foot">Copyright &copy; 2011 <a href="http://bost.ocks.org/mike">Mike Bostock</a></div>
 </div>
 </div>
-
 </body>
 </html>
