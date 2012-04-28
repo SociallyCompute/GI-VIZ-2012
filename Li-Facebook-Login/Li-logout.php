@@ -9,7 +9,6 @@
 
 require 'facebook.php';
 
-
 session_start();
 session_destroy();
 header('Location: Li-facebook-login.php');
