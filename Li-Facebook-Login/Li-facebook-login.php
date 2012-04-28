@@ -1,6 +1,6 @@
 <?php
 require 'facebook.php';
-//comments
+//comments...
 $facebook = new Facebook(array(
     'appId' => '227636627338538',
     'secret' => 'b182fb7acb29d888d4570c6f13b60037',

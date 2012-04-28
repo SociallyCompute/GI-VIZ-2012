@@ -6,7 +6,7 @@
  * Time: 12:11 AM
  * To change this template use File | Settings | File Templates.
  */
-
+//comments......
 require 'facebook.php';
 
 session_start();
