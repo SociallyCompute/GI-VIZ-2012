@@ -17,15 +17,18 @@
 
 /* Definition code */
 function randomData() {
-    return d3.range(10).map(function (i) {
-        return {x:i / 9, y:Math.random()};
+    return d3.range(15).map(function (i) {
+        return {x:i / 14, y:Math.random()};
     });
 }
 
 function reDomain(maxValue) {
+
     var dy = Math.pow(10, Math.round(Math.log(maxValue) / Math.log(10)) - 1);
     return Math.ceil(maxValue / dy) * dy;
+
 }
+
 
 function updateData() {
     var data = randomData();
@@ -33,7 +36,6 @@ function updateData() {
         return d.y;
     });
     var newCeilY = reDomain(newMaxY);
-
     var w = 450,
             h = 450,
             x = d3.scale.linear().domain([0, 1]).range([0, w]),
@@ -43,6 +45,7 @@ function updateData() {
 
     var yrule = vis.selectAll("g.y")
             .data(y.ticks(10));
+
 
     // yRule Enter
     var newrule = yrule.enter().append("svg:g")
@@ -71,6 +74,7 @@ function updateData() {
             .duration(2000)
             .attr("y", y)
             .text(y.tickFormat(10));
+
 
     // yLine Update
     yrule.select("line.yLine")
@@ -106,6 +110,7 @@ function updateData() {
     oldrule.transition()
             .duration(2000).remove();
 
+
     // Dots
     var node = vis.selectAll("path.dot")
             .data(data)
@@ -121,6 +126,7 @@ function updateData() {
             });
 
 }
+
 
 var initData = function () {
     var data = randomData();
@@ -182,8 +188,23 @@ var initData = function () {
             .attr("x", -3)
             .attr("y", y)
             .attr("dy", ".35em")
-            .attr("text-anchor", "end")
-            .text(y.tickFormat(10));
+            .attr("text-anchor", "end");
+
+    //student addition begins
+
+
+    var line = d3.svg.line()
+            .x(function (d) {
+                return x(d.x);
+            })
+            .y(function (d) {
+                return  y(d.y)
+            });
+    vis.append("svg:path")
+            .attr("d", line(data));
+
+    //student addition ends
+
 
     var node = vis.selectAll("path.dot")
             .data(data)
@@ -203,16 +224,20 @@ var initData = function () {
                 d3.select(this).transition().duration(300).style("fill", "white");
             });
 
+
     node.append("svg:title")
             .attr("class", "dotTitle")
             .text(function (d) {
                 return "X: " + d.x.toFixed(3) + ", Y: " + d.y.toFixed(3);
             });
+
+
 }
 
 /* UI Events */
 /* Execution code */
 initData();
+
 </script>
 </body>
 </html>
