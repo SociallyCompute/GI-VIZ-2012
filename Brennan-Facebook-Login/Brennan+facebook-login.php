@@ -2,7 +2,7 @@
 
 $app_id = "177823159007563";
 $app_secret = "YOUR_APP_SECRET";
-$my_url = "YOUR_URL";
+$my_url = "http://localhost/facebook";
 
 session_start();
 $code = $_REQUEST["code"];
