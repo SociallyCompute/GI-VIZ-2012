@@ -1,3 +1,11 @@
+/**
+* Created by JetBrains PhpStorm.
+* User: Sean P. Brennan
+* Date: 4/29/12
+* Time: 8:24 PM
+* Code below was adapted from https://developers.facebook.com/docs/authentication/server-side/
+*/
+
 <?php
 
 $app_id = "177823159007563";
