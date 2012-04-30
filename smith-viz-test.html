@@ -12,7 +12,6 @@
     </style>
 </head>
 <body>
-<!--Changes made to first section!!!-->
 <div class="body">
 <div class="content">
 <div class="topbar">
@@ -24,8 +23,8 @@
 <div class="sidebar">
     <h1>d3.js</h1>
 </div>
-<!--Changed title to reflect changes-->
-<h1 id='three_little_circles'>Six Little Circles</h1>
+
+<h1 id='three_little_circles'>Three Little Circles</h1>
 <style type='text/css'>
 
     .chart {
@@ -74,17 +73,16 @@
 
 </style>
 <script type='text/javascript'>
-    //Added 150, 200, and 250 to the data
-    var data = [32, 57, 112, 150, 200, 250],
+    var data = [32, 57, 112],
             dataEnter = data.concat(293),
             dataExit = data.slice(0, 2),
+            dataTest = data.concat(150, 200, 250),
             w = 360,
             h = 180,
-            x = d3.scale.ordinal().domain([57, 32, 112, 150, 200, 250]).rangePoints([0, w], 1),
+            x = d3.scale.ordinal().domain([57, 32, 112]).rangePoints([0, w], 1),
             y = d3.scale.ordinal().domain(data).rangePoints([0, h], 2);
 </script>
-<!--Changed three to six to reflect additional circles!!!!-->
-<p>Once upon a time, there were six little circles. This tutorial shows you how to manipulate them using
+<p>Once upon a time, there were three little circles. This tutorial shows you how to manipulate them using
     selections.</p>
 
 <h2 id='selecting_elements'>Selecting Elements</h2>
@@ -256,8 +254,8 @@ circle.data([32, 57, 112]);
         d3.select("#chart-5 button").on("click", function () {
             g
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .select("rect")
                     .style("opacity", 1);
 
@@ -316,8 +314,8 @@ circle.attr("r", function(d) {
         d3.select("#chart-6 button").on("click", function () {
             g
                     .attr("transform", function (d) {
-                return "translate(" + x(d) + "," + y(d) + ")";
-            })
+                        return "translate(" + x(d) + "," + y(d) + ")";
+                    })
                     .select("circle")
                     .attr("r", 12);
 
@@ -371,8 +369,8 @@ circle.attr("cx", function(d, i) {
         d3.select("#chart-6b button").on("click", function () {
             g
                     .attr("transform", function (d) {
-                return "translate(" + x(d) + "," + y(d) + ")";
-            })
+                        return "translate(" + x(d) + "," + y(d) + ")";
+                    })
                     .transition()
                     .duration(750)
                     .attr("transform", function (d, i) {
@@ -436,8 +434,8 @@ var circle = svg.selectAll("circle")
         d3.select("#chart-7 button").on("click", function () {
             g
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .select("rect")
                     .style("opacity", 1);
 
@@ -640,7 +638,7 @@ svg.selectAll("circle")
                 .attr("height", h);
 
         var g = svg.selectAll(".data")
-                .data(dataEnter)
+                .data(dataTest)
                 .enter().append("g")
                 .attr("class", "data")
                 .attr("transform", function (d, i) {
@@ -744,8 +742,8 @@ var circle = svg.selectAll("circle")
         d3.select("#chart-11 button").on("click", function () {
             g
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .select("rect")
                     .style("opacity", 1);
 
@@ -868,8 +866,8 @@ circle.exit().remove();
                 });
 
         var ed = gd.filter(function (d, i) {
-            return i == 2;
-        }),
+                    return i == 2;
+                }),
                 ud = gd.filter(function (d, i) {
                     return i != 2;
                 });
@@ -921,8 +919,8 @@ circle.exit().remove();
         d3.select("#chart-13 button").on("click", function () {
             gd
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .transition()
                     .duration(750)
                     .attr("transform", function (d) {

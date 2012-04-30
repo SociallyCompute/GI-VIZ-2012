@@ -15,12 +15,15 @@
  * under the License.
  */
 
-require 'facebook.php';
+include 'facebook.php';
 
-// Create our Application instance (replace this with your appId and secret).
+
+// Create our Application instance (replace this with your appId and secret)!
 $facebook = new Facebook(array(
-    'appId' => '344617158898614',
-    'secret' => '6dc8ac871858b34798bc2488200e503d',
+    'appId' => 'APP ID',
+    'secret' => 'SECRET',
+    'cookie' => true,
+
 ));
 
 // Get User ID
@@ -42,54 +45,62 @@ if ($user) {
     }
 }
 
-// Login or logout url will be needed depending on current user state.
 if ($user) {
-    $logoutUrl = $facebook->getLogoutUrl();
+    $logoutUrl = $facebook->getLogoutUrl(((array(
+        'next' => 'http://localhost/destroy.php',
+    ))));
 } else {
     $loginUrl = $facebook->getLoginUrl();
 }
-
-// This call will always work since we are fetching public data.
-$naitik = $facebook->api('/naitik');
-
 ?>
-<!doctype html>
-<html xmlns:fb="http://www.facebook.com/2008/fbml">
-<head>
-    <title>php-sdk</title>
-    <style>
-        body {
-            font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
-        }
+<script>
+    //this is JS SDK load & initialization code (for the login button)
+    fbAsyncInit = function () {
+        FB.init({
+            appId:'APP ID' //login status
+            cookie:true, // enable cookies to allow the server to access the session
+            xfbml:true  // parse XFBML
+        });
 
-        h1 a {
-            text-decoration: none;
-            color: #3b5998;
-        }
+        // Additional initialization code here
+    };
 
-        h1 a:hover {
-            text-decoration: underline;
+    // Load the SDK Asynchronously
+    (function (d) {
+        var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+        if (d.getElementById(id)) {
+            return;
         }
-    </style>
-</head>
+        js = d.createElement('script');
+        js.id = id;
+        js.async = true;
+        js.src = "//connect.facebook.net/en_US/all.js";
+        ref.parentNode.insertBefore(js, ref);
+    }(document));
+</script>
+
+<html>
+
 <body>
-<h1>php-sdk</h1>
+<div id="fb-root"></div>
 
+<head>
+    <title>Facebook Login</title>
+</head>
 <?php if ($user): ?>
 <a href="<?php echo $logoutUrl; ?>">Logout</a>
     <?php else: ?>
-<div>
-    Login using OAuth 2.0 handled by the PHP SDK:
-    <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
-</div>
+<a href="<?php echo $loginUrl; ?>">
+    <div class="fb-login-button"></div>
+</a>
     <?php endif ?>
 
-<h3>PHP Session</h3>
-<pre><?php print_r($_SESSION); ?></pre>
+<p></p>
 
 <?php if ($user): ?>
 <h3>You</h3>
 <img src="https://graph.facebook.com/<?php echo $user; ?>/picture">
+    <?php echo $user; ?>
 
 <h3>Your User Object (/me)</h3>
 <pre><?php print_r($user_profile); ?></pre>
@@ -97,8 +108,10 @@ $naitik = $facebook->api('/naitik');
 <strong><em>You are not Connected.</em></strong>
     <?php endif ?>
 
-<h3>Public profile of Naitik</h3>
-<img src="https://graph.facebook.com/naitik/picture">
-<?php echo $naitik['name']; ?>
+
 </body>
 </html>
+
+
+
+

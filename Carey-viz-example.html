@@ -135,14 +135,12 @@ var circle = svg.selectAll("circle");
     fill color using <a href='https://github.com/mbostock/d3/wiki/Selections#style'>style</a>, and the radius and the
     <em>y</em>-position using <a href='https://github.com/mbostock/d3/wiki/Selections#attr'>attr</a>:</p>
 
-
 <div class='chart' id='chart-3'>
 <pre class='code'>
 circle.style("fill", "steelblue");
-circle.attr("cy", 90);
+circle.attr("cy", 150);
 circle.attr("r", 30);
 </pre>
-
     <button>Run</button>
 </div>
 <script type='text/javascript'>
@@ -162,11 +160,10 @@ circle.attr("r", 30);
         d3.select("#chart-3 button").on("click", function () {
             circle.style("fill", "#aaa").attr("r", 12).attr("cy", y);
             circle.transition().duration(500).delay(0).style("fill", "steelblue");
-            circle.transition().duration(500).delay(500).attr("cy", 90);
+            circle.transition().duration(500).delay(500).attr("cy", 150);
             circle.transition().duration(500).delay(1000).attr("r", 30);
         });
     })();
-
 </script>
 <p>We can also compute the attribute values dynamically, using functions rather than constants. For example, maybe we
     want to set the <em>x</em>-coordinate to a random value:</p>
@@ -208,6 +205,8 @@ circle.attr("cx", function() {
 
 <h2 id='binding_data'>Binding Data</h2>
 
+<h1>Matthew Carey - modified the first visualization below to add three data points </h1>
+
 <p>This is beginning to look a lot like <a href='http://jquery.com/'>jQuery</a>. More commonly, though, we want to use
     <em>data</em> to drive the appearance of our circles. To do that, we need some data. For the sake of example, let&#8217;s
     imagine that each of these circles represents a number: 32, 57 and 112. The <a
@@ -216,12 +215,16 @@ circle.attr("cx", function() {
 
 <div class='chart' id='chart-5'>
 <pre class='code'>
-circle.data([32, 57, 112]);
+circle.data([32, 57, 112, 150, 200, 250]);
 </pre>
     <button>Run</button>
 </div>
 <script type='text/javascript'>
     (function () {
+        // 2012-04-24 Matthew Carey - modified function to use 'mydata' array as data source
+        //mydata = '';
+        //mydata = [32, 57, 112, 150, 200, 250];
+        data = data.concat(150, 200, 250);
         var svg = d3.select("#chart-5").append("svg")
                 .attr("width", w)
                 .attr("height", h);
@@ -270,6 +273,10 @@ circle.data([32, 57, 112]);
                     .style("opacity", 1e-6);
         });
     })();
+
+    // 2012-04-25 MC - maybe not necessary but I set data back to the original
+    data = '';
+    data = [32, 57, 112];
 </script>
 <p>All data in D3 is specified as an array of values. Conveniently, this mirrors the concept of a selection, which is
     just an array of elements. Notice then how the first number (the first <em>datum</em>, 32) is bound to the first
@@ -962,6 +969,5 @@ circle.exit().remove();
 <div class="foot">Copyright &copy; 2011 <a href="http://bost.ocks.org/mike">Mike Bostock</a></div>
 </div>
 </div>
-
 </body>
 </html>
