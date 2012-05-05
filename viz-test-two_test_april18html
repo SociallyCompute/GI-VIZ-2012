@@ -135,12 +135,14 @@ var circle = svg.selectAll("circle");
     fill color using <a href='https://github.com/mbostock/d3/wiki/Selections#style'>style</a>, and the radius and the
     <em>y</em>-position using <a href='https://github.com/mbostock/d3/wiki/Selections#attr'>attr</a>:</p>
 
+
 <div class='chart' id='chart-3'>
 <pre class='code'>
 circle.style("fill", "steelblue");
 circle.attr("cy", 90);
 circle.attr("r", 30);
 </pre>
+
     <button>Run</button>
 </div>
 <script type='text/javascript'>
@@ -164,6 +166,7 @@ circle.attr("r", 30);
             circle.transition().duration(500).delay(1000).attr("r", 30);
         });
     })();
+
 </script>
 <p>We can also compute the attribute values dynamically, using functions rather than constants. For example, maybe we
     want to set the <em>x</em>-coordinate to a random value:</p>
