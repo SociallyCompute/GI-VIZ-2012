@@ -6,7 +6,7 @@
  * Time: 8:59 PM
  * To change this template use File | Settings | File Templates.
  */
-
+//
 $textcolor = "black"; // default to black
 
 if (isset($_POST['rdcolor'])) {
