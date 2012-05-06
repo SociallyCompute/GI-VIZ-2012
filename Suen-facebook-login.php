@@ -13,14 +13,17 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
  * License for the specific language governing permissions and limitations
  * under the License.
+ *
+ * Modified by Tze Fung Suen
+ *
  */
 
-require 'facebook.php';
+require './src/facebook.php';
 
 // Create our Application instance (replace this with your appId and secret).
 $facebook = new Facebook(array(
-    'appId' => '344617158898614',
-    'secret' => '6dc8ac871858b34798bc2488200e503d',
+    'appId' => '347925085264221',
+    'secret' => 'b6c983d05f698f44c5fe664a45c79fa7',
 ));
 
 // Get User ID
@@ -49,8 +52,6 @@ if ($user) {
     $loginUrl = $facebook->getLoginUrl();
 }
 
-// This call will always work since we are fetching public data.
-$naitik = $facebook->api('/naitik');
 
 ?>
 <!doctype html>
@@ -97,8 +98,5 @@ $naitik = $facebook->api('/naitik');
 <strong><em>You are not Connected.</em></strong>
     <?php endif ?>
 
-<h3>Public profile of Naitik</h3>
-<img src="https://graph.facebook.com/naitik/picture">
-<?php echo $naitik['name']; ?>
 </body>
 </html>
