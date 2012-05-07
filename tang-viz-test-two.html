@@ -73,7 +73,7 @@
 
 </style>
 <script type='text/javascript'>
-    var data = [32, 57, 112],
+    var data = [32, 57, 112, 45, 60, 180],
             dataEnter = data.concat(293),
             dataExit = data.slice(0, 2),
             w = 360,
@@ -253,8 +253,8 @@ circle.data([32, 57, 112]);
         d3.select("#chart-5 button").on("click", function () {
             g
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .select("rect")
                     .style("opacity", 1);
 
@@ -313,8 +313,8 @@ circle.attr("r", function(d) {
         d3.select("#chart-6 button").on("click", function () {
             g
                     .attr("transform", function (d) {
-                return "translate(" + x(d) + "," + y(d) + ")";
-            })
+                        return "translate(" + x(d) + "," + y(d) + ")";
+                    })
                     .select("circle")
                     .attr("r", 12);
 
@@ -368,8 +368,8 @@ circle.attr("cx", function(d, i) {
         d3.select("#chart-6b button").on("click", function () {
             g
                     .attr("transform", function (d) {
-                return "translate(" + x(d) + "," + y(d) + ")";
-            })
+                        return "translate(" + x(d) + "," + y(d) + ")";
+                    })
                     .transition()
                     .duration(750)
                     .attr("transform", function (d, i) {
@@ -433,8 +433,8 @@ var circle = svg.selectAll("circle")
         d3.select("#chart-7 button").on("click", function () {
             g
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .select("rect")
                     .style("opacity", 1);
 
@@ -741,8 +741,8 @@ var circle = svg.selectAll("circle")
         d3.select("#chart-11 button").on("click", function () {
             g
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .select("rect")
                     .style("opacity", 1);
 
@@ -865,8 +865,8 @@ circle.exit().remove();
                 });
 
         var ed = gd.filter(function (d, i) {
-            return i == 2;
-        }),
+                    return i == 2;
+                }),
                 ud = gd.filter(function (d, i) {
                     return i != 2;
                 });
@@ -918,8 +918,8 @@ circle.exit().remove();
         d3.select("#chart-13 button").on("click", function () {
             gd
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .transition()
                     .duration(750)
                     .attr("transform", function (d) {
