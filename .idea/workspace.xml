@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7873b57c-cdaf-4510-9ff9-a77f495d067d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Team 4/mulhern-4-2-2a.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Module Four - Team 4/mulhern-4-2-2.html" afterPath="$PROJECT_DIR$/Module Four - Team 4/mulhern-4-2-2.html" />
     </list>
     <ignored path="GI-VIZ-2012.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,10 +35,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mulhern-4-2-2.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mulhern-4-2-2.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Module Four - Team 4/mulhern-4-2-2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="65" selection-start="5195" selection-end="5195" vertical-scroll-proportion="4.0546875">
+            <state line="4" column="11" selection-start="112" selection-end="134" vertical-scroll-proportion="-2.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mulhern-4-2-2a.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Module Four - Team 4/mulhern-4-2-2a.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="34" selection-start="159" selection-end="159" vertical-scroll-proportion="0.061349694">
               <folding />
             </state>
           </provider>
@@ -67,6 +78,7 @@
         <option value="$PROJECT_DIR$/viz-test-two.html" />
         <option value="$PROJECT_DIR$/Stickler-viz-example.html" />
         <option value="$PROJECT_DIR$/Module Four - Team 4/mulhern-4-2-2.html" />
+        <option value="$PROJECT_DIR$/Module Four - Team 4/mulhern-4-2-2a.html" />
       </list>
     </option>
   </component>
@@ -143,6 +155,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="DefaultHtmlFileTemplate" value="Html" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -245,7 +258,7 @@
     <frame x="-1" y="25" width="1922" height="1180" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879376" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879376" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -352,7 +365,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Module Four - Team 4/mulhern-4-2-2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="65" selection-start="5195" selection-end="5195" vertical-scroll-proportion="4.0546875">
+        <state line="4" column="11" selection-start="112" selection-end="134" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module Four - Team 4/mulhern-4-2-2a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="34" selection-start="159" selection-end="159" vertical-scroll-proportion="0.061349694">
           <folding />
         </state>
       </provider>
