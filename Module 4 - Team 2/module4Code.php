@@ -7,7 +7,8 @@
  * To change this template use File | Settings | File Templates.
  */
 //
-$textcolor = "black"; // default to black
+$textcolor = 'black'; // default to black and 16px
+$textsize = '16px';
 
 if (isset($_POST['rdcolor'])) {
 
@@ -60,44 +61,44 @@ $output = $a . ' + ' . $b . ' = ' . $sum;
 
     <table>
         <tr>
-            <td><input type="radio" name="rdcolor[]" value="red" onselect="sendform();"></td>
+            <td><input type="radio" name="rdcolor[]" value="red"></td>
             <td style="color:red">Red</td>
-            <td><input type="radio" name="rdsize[]" value="12px" onselect="sendform();"></td>
+            <td><input type="radio" name="rdsize[]" value="12px"></td>
             <td style="font-size:12px">10px</td>
         </tr>
         <tr>
-            <td><input type="radio" name="rdcolor[]" value="orange" onselect="sendform()";></td>
+            <td><input type="radio" name="rdcolor[]" value="orange"></td>
             <td style="color:orange">Orange</td>
-            <td><input type="radio" name="rdsize[]" value="18px" onselect="sendform();"></td>
+            <td><input type="radio" name="rdsize[]" value="18px"></td>
             <td style="font-size:18px">16px</td>
         </tr>
         <tr>
-            <td><input type="radio" name="rdcolor[]" value="yellow" onselect="sendform();"></td>
+            <td><input type="radio" name="rdcolor[]" value="yellow"></td>
             <td style="color:yellow">Yellow</td>
-            <td><input type="radio" name="rdsize[]" value="22px" onselect="sendform();"></td>
+            <td><input type="radio" name="rdsize[]" value="22px"></td>
             <td style="font-size:22px">22px</td>
         </tr>
         <tr>
-            <td><input type="radio" name="rdcolor[]" value="green" onselect="sendform();"></td>
+            <td><input type="radio" name="rdcolor[]" value="green"></td>
             <td style="color:green">Green</td>
-            <td><input type="radio" name="rdsize[]" value="26px" onselect="sendform();"></td>
+            <td><input type="radio" name="rdsize[]" value="26px"></td>
             <td style="font-size:26px">26px</td>
         <tr>
-            <td><input type="radio" name="rdcolor[]" value="blue" onselect="sendform();"></td>
+            <td><input type="radio" name="rdcolor[]" value="blue"></td>
             <td style="color:blue">Blue</td>
-            <td><input type="radio" name="rdsize[]" value="32px" onselect="sendform();"></td>
+            <td><input type="radio" name="rdsize[]" value="32px"></td>
             <td style="font-size:35px">32px</td>
         </tr>
         <tr>
-            <td><input type="radio" name="rdcolor[]" value="indigo" onselect="sendform();"></td>
+            <td><input type="radio" name="rdcolor[]" value="indigo"></td>
             <td style="color:indigo">Indigo</td>
-            <td><input type="radio" name="rdsize[]" value="40px" onselect="sendform();"></td>
+            <td><input type="radio" name="rdsize[]" value="40px"></td>
             <td style="font-size:42px">40px</td>
         </tr>
         <tr>
-            <td><input type="radio" name="rdcolor[]" value="violet" onselect="sendform();"></td>
+            <td><input type="radio" name="rdcolor[]" value="violet"></td>
             <td style="color:violet">Violet</td>
-            <td><input type="radio" name="rdsize[]" value="50px" onselect="sendform();"></td>
+            <td><input type="radio" name="rdsize[]" value="50px"></td>
             <td style="font-size:50px">50px</td>
         </tr>
     </table>
