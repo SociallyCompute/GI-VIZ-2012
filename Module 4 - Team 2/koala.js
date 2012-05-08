@@ -1,6 +1,6 @@
 "use strict"
 
-/*
+/*//
  * Made with love by Vadim Ogievetsky for Annie Albagli (Valentine's Day 2011)
  * Powered by Mike Bostock's D3
  *
