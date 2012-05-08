@@ -97,7 +97,7 @@ function loadImage(imageData, onEvent) {
                 c2 = prevLayer[[2 * x + 1, 2 * y  ]];
                 c3 = prevLayer[[2 * x  , 2 * y + 1]];
                 c4 = prevLayer[[2 * x + 1, 2 * y + 1]];
-                c5 = prevLayer[[2 * x  , 2 * y ]];
+                c5 = prevLayer[[2 * x  , 2 * y + 1 ]];
                 c6 = prevLayer[[2 * x + 1, 2 * y  ]];
                 col = avgCol(c1.col, c2.col, c3.col, c4.col);
                 layer[[x, y]] = c1.parent = c2.parent = c3.parent = c4.parent = c5.parent = c6.parent = {
@@ -106,7 +106,7 @@ function loadImage(imageData, onEvent) {
                     r:size / 2,
                     col:col,
                     rgb:colToRGB(col),
-                    children:[c1, c2, c3, c4, c5, c6],
+                    children:[c1, c2],
                     layer:activeLayerNumber
                 };
             }
