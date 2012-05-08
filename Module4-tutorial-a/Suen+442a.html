@@ -9,7 +9,7 @@
 <body>
 <div id="demoContainer">
     <div id="option">
-        <input name="updateButton" type="button" value="Update"/>
+        <input name="updateButton" type="button" value="Update" onclick="updateData()" />
     </div>
     <div id="mainGraph">
     </div>
@@ -113,6 +113,7 @@
             .attr("class", "dotTitle")
             .text(function(d) { return "X: " + d.x.toFixed(3) + ", Y: " + d.y.toFixed(3); });
 
+
     //step8
     function updateData() {
         var data = randomData();
@@ -202,6 +203,7 @@
                 .text(function(d) { return "X: " + d.x.toFixed(3) + ", Y: " + d.y.toFixed(3); });
 
     }
+
 
 
 </script>
