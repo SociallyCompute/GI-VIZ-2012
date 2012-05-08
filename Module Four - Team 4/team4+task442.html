@@ -23,12 +23,12 @@
         {year:2004, books:37},
         {year:2005, books:44},
         {year:2006, books:53},
-        {year:2007, books:60},
+        {year:2007, books:75},
         {year:2008, books:44},
         {year:2009, books:20},
         {year:2010, books:41},
         {year:2011, books:44},
-        {year:2012, books:75}
+        {year:2012, books:60}
     ];
 
     var padding = 30;
@@ -38,7 +38,7 @@
 
     var x = d3.scale.linear().domain([0, data.length]).range([0, width]);
     var y = d3.scale.linear().domain([0, d3.max(data, function (datum) {
-        return datum.books;
+        return datum.books + 1;
     })]).
             rangeRound([0, height]);
 
