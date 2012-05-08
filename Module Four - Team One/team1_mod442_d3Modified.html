@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Module 4.4.2 - Team 1 - D3 Visualization Modified</title>
+    <script type="text/javascript" src="d3.v2.js?2.8.1"></script>
+</head>
+<body>
+
+<h1>Team 1 - Module 4.4.2 - Modified Bar Chart Demo</h1>
+
+<h2>It is now Dynamic!!! - Refresh your browser to change the data</h2>
+
+<div id="barChartMod">
+    <script type="text/javascript">
+
+        //The part that got modded - Tze
+        //The data array change dynamically
+        var data2 = [];
+        var numberOfCol = 18;
+        var firstYear = 1995;
+        var theYear;
+        var theBook;
+        //Changed numberOfCol to 18 to reflect current year - Colin
+        //Returns a random integer between min and max
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        for (var i = 0; i < numberOfCol; i++) {
+            theYear = firstYear + i;
+            theBook = getRandomInt(30, 60);
+            data2.push({year:theYear, books:theBook});
+        }
+        //the end of the data mod
+
+        var padding = 30;
+        var barWidth = 40;
+        var width = (barWidth + 10) * data2.length;
+        var height = 200;
+
+        var x = d3.scale.linear().domain([0, data2.length]).range([0, width]);
+        var y = d3.scale.linear().domain([0, d3.max(data2, function (datum) {
+            return datum.books;
+        })]).
+                rangeRound([0, height]);
+
+
+        var barDemo2 = d3.select("#barChartMod").
+                append("svg:svg").
+                attr("width", width).
+                attr("height", height + padding);
+
+        barDemo2.selectAll("rect").
+                data(data2).
+                enter().
+                append("svg:rect").
+                attr("x",
+                function (datum, index) {
+                    return x(index);
+                }).
+                attr("y",
+                function (datum) {
+                    return height - y(datum.books);
+                }).
+                attr("height",
+                function (datum) {
+                    return y(datum.books);
+                }).
+                attr("width", barWidth).
+            //chnaged the color - Tze
+                attr("fill", "#39230D");
+
+        barDemo2.selectAll("text").
+                data(data2).
+                enter().
+                append("svg:text").
+                attr("x",
+                function (datum, index) {
+                    return x(index) + barWidth;
+                }).
+                attr("y",
+                function (datum) {
+                    return height - y(datum.books);
+                }).
+                attr("dx", -barWidth / 2).
+                attr("dy", "1.2em").
+                attr("text-anchor", "middle").
+                text(
+                function (datum) {
+                    return datum.books;
+                }).
+                attr("fill", "white");
+
+        barDemo2.selectAll("text.yAxis").
+                data(data2).
+                enter().append("svg:text").
+                attr("x",
+                function (datum, index) {
+                    return x(index) + barWidth;
+                }).
+                attr("y", height).
+                attr("dx", -barWidth / 2).
+                attr("text-anchor", "middle").
+                attr("style", "font-size: 12; font-family: Helvetica, sans-serif").
+                text(
+                function (datum) {
+                    return datum.year;
+                }).
+                attr("transform", "translate(0, 18)").
+                attr("class", "yAxis");
+
+    </script>
+    <!--reload the page button - Domenic Rocco -->
+    <br/><input type="button" value="Reload Page" onClick="window.location.reload()">
+
+</div>
+
+</body>
+</html>
