@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Team 4 - Module 4.4.2</title>
+    <script type="text/javascript" src="../css/d3.v2.js?2.8.1"></script>
+</head>
+<body>
+
+<h1>Team 4 - Module 4.4.2 - Modified Bar Demo</h1>
+
+<div id="bar-demo-modified"></div>
+
+
+<script type="text/javascript">
+
+    var data = [
+        {year:1999, books:20},
+        {year:2000, books:14},
+        {year:2001, books:32},
+        {year:2002, books:28},
+        {year:2003, books:43},
+        {year:2004, books:37},
+        {year:2005, books:44},
+        {year:2006, books:53},
+        {year:2007, books:60},
+        {year:2008, books:44},
+        {year:2009, books:20},
+        {year:2010, books:41},
+        {year:2011, books:44},
+        {year:2012, books:75}
+    ];
+
+    var padding = 30;
+    var barWidth = 40;
+    var width = (barWidth + 10) * data.length;
+    var height = 200;
+
+    var x = d3.scale.linear().domain([0, data.length]).range([0, width]);
+    var y = d3.scale.linear().domain([0, d3.max(data, function (datum) {
+        return datum.books;
+    })]).
+            rangeRound([0, height]);
+
+    // add the canvas to the DOM
+    var barDemo = d3.select("#bar-demo-modified").
+            append("svg:svg").
+            attr("width", width).
+            attr("height", height + padding);
+
+
+    barDemo.selectAll("rect").
+            data(data).
+            enter().
+            append("svg:rect").
+            attr("x",
+            function (datum, index) {
+                return x(index);
+            }).
+            attr("y",
+            function (datum) {
+                return height - y(datum.books);
+            }).
+            attr("height",
+            function (datum) {
+                return y(datum.books);
+            }).
+            attr("width", barWidth).
+            attr("fill", "lightgreen").
+            attr("stroke", "darkgreen");
+
+    barDemo.selectAll("text").
+            data(data).
+            enter().
+            append("svg:text").
+            attr("x",
+            function (datum, index) {
+                return x(index) + barWidth;
+            }).
+            attr("y",
+            function (datum) {
+                return height - y(datum.books);
+            }).
+            attr("dx", -barWidth / 2).
+            attr("dy", "1.2em").
+            attr("text-anchor", "middle").
+            text(
+            function (datum) {
+                return datum.books;
+            }).
+            attr("fill", "darkblue");
+
+    barDemo.selectAll("text.yAxis").
+            data(data).
+            enter().append("svg:text").
+            attr("x",
+            function (datum, index) {
+                return x(index) + barWidth;
+            }).
+            attr("y", height).
+            attr("dx", -barWidth / 2).
+            attr("text-anchor", "middle").
+            attr("fill", "darkblue").
+            attr("style", "font-size: 12; font-family: Helvetica, sans-serif;").
+            text(
+            function (datum) {
+                return datum.year;
+            }).
+            attr("transform", "translate(0, 18)").
+            attr("class", "yAxis");
+
+</script>
+
+</body>
+</html>

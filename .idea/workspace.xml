@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7873b57c-cdaf-4510-9ff9-a77f495d067d" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Module Four - Team 4/mulhern-4-2-2.html" afterPath="$PROJECT_DIR$/Module Four - Team 4/mulhern+442.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Module Four - Team 4/mulhern-4-2-2a.html" afterPath="$PROJECT_DIR$/Module4-tutorial-a/mulhern+442a.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Team 4/team4+task442.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GI-VIZ-2012.iws" />
@@ -35,10 +34,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mulhern+442.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mulhern+442.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Module Four - Team 4/mulhern+442.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="28" selection-start="224" selection-end="224" vertical-scroll-proportion="0.07668712">
+            <state line="6" column="4" selection-start="242" selection-end="310" vertical-scroll-proportion="-3.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="team4+task442.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Module Four - Team 4/team4+task442.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="32" selection-start="511" selection-end="511" vertical-scroll-proportion="0.2760736">
               <folding />
             </state>
           </provider>
@@ -79,6 +87,7 @@
         <option value="$PROJECT_DIR$/Stickler-viz-example.html" />
         <option value="$PROJECT_DIR$/Module Four - Team 4/mulhern-4-2-2a.html" />
         <option value="$PROJECT_DIR$/Module Four - Team 4/mulhern-4-2-2.html" />
+        <option value="$PROJECT_DIR$/Module Four - Team 4/team4-task442.html" />
       </list>
     </option>
   </component>
@@ -192,13 +201,6 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method>
         <option name="FtpUpload" enabled="false">
@@ -207,6 +209,13 @@
         </option>
         <option name="PhingTarget" enabled="false" />
       </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
     </configuration>
     <configuration default="false" name="viz-test-two.html" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
@@ -276,7 +285,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15811966" sideWeight="0.67120624" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15972222" sideWeight="0.67120624" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -327,7 +336,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating code per 4.2.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating code per 4.4.2" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -345,6 +354,7 @@
     <MESSAGE value="Adding code from following D3 for Mere Mortals per task 4.2.2" />
     <MESSAGE value="Adding code from following D3 Scale Graph Tutorial per task 4.2.2a" />
     <MESSAGE value="Updating code per 4.2.2" />
+    <MESSAGE value="Updating code per 4.4.2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -384,7 +394,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Module Four - Team 4/mulhern+442.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="224" selection-end="224" vertical-scroll-proportion="0.07668712">
+        <state line="6" column="4" selection-start="242" selection-end="310" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module Four - Team 4/team4+task442.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="32" selection-start="511" selection-end="511" vertical-scroll-proportion="0.2760736">
           <folding />
         </state>
       </provider>
