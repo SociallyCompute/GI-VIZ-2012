@@ -14,8 +14,8 @@
     <script type="text/javascript">
 
         //The part that got modded - Tze
-        //Change it to dynamically generate the data array
-        var data = [];
+        //The data array change dynamically
+        var data2 = [];
         var numberOfCol = 25;
         var firstYear = 1995;
         var theYear;
@@ -30,17 +30,17 @@
         {
             theYear = firstYear + i;
             theBook = getRandomInt(30,60);
-            data.push({year: theYear, books: theBook});
+            data2.push({year: theYear, books: theBook});
         }
         //the end of the data mod
 
         var padding = 30;
         var barWidth = 40;
-        var width = (barWidth + 10) * data.length;
+        var width = (barWidth + 10) * data2.length;
         var height = 200;
 
-        var x = d3.scale.linear().domain([0, data.length]).range([0, width]);
-        var y = d3.scale.linear().domain([0, d3.max(data, function(datum) { return datum.books; })]).
+        var x = d3.scale.linear().domain([0, data2.length]).range([0, width]);
+        var y = d3.scale.linear().domain([0, d3.max(data2, function(datum) { return datum.books; })]).
         rangeRound([0, height]);
 
 
@@ -50,7 +50,7 @@
                 attr("height", height + padding);
 
         barDemo2.selectAll("rect").
-                data(data).
+                data(data2).
                 enter().
                 append("svg:rect").
                 attr("x", function(datum, index) { return x(index); }).
@@ -61,7 +61,7 @@
                 attr("fill", "#39230D");
 
         barDemo2.selectAll("text").
-                data(data).
+                data(data2).
                 enter().
                 append("svg:text").
                 attr("x", function(datum, index) { return x(index) + barWidth; }).
@@ -73,7 +73,7 @@
                 attr("fill", "white");
 
         barDemo2.selectAll("text.yAxis").
-                data(data).
+                data(data2).
                 enter().append("svg:text").
                 attr("x", function(datum, index) { return x(index) + barWidth; }).
                 attr("y", height).
