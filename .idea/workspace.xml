@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7873b57c-cdaf-4510-9ff9-a77f495d067d" name="Default" comment="Adding team 4's code for task 4.4.4!&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/team4-task4.4.4/catchingfire-hashtag-timeline.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/team4-task4.4.4/css/d3.v2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/team4-task4.4.4/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/team4-task4.4.4/css/syntax.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/team4-task4.4.4/team4+task444.html" />
+    <list default="true" id="7873b57c-cdaf-4510-9ff9-a77f495d067d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team4-task4.4.4/team4+task444.html" afterPath="$PROJECT_DIR$/team4-task4.4.4/team4+task444.html" />
     </list>
     <ignored path="GI-VIZ-2012.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +24,17 @@
     <favorites_list name="GI-VIZ-2012" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="team4+task444.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/team4-task4.4.4/team4+task444.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="12" selection-start="886" selection-end="886" vertical-scroll-proportion="0.38343558">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -57,11 +63,13 @@
         <option value="$PROJECT_DIR$/Module Four - Team 4/team4-task442.html" />
         <option value="$PROJECT_DIR$/Module Four - Team One/Tze+441.html" />
         <option value="$PROJECT_DIR$/Module Four - Team One/team1_mod442_d3Modified.html" />
+        <option value="$PROJECT_DIR$/team4-task4.4.4/team4+task444.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Unnamed" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="25" />
     <option name="width" value="1922" />
     <option name="height" value="1180" />
@@ -92,7 +100,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -127,6 +134,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -174,6 +182,13 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method>
         <option name="FtpUpload" enabled="false">
@@ -182,13 +197,6 @@
         </option>
         <option name="PhingTarget" enabled="false" />
       </method>
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method />
     </configuration>
     <configuration default="false" name="viz-test-two.html" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
@@ -260,14 +268,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1922" height="1180" extended-state="6" />
+    <frame x="-1" y="25" width="1922" height="1180" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879376" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879376" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22222222" sideWeight="0.67120624" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22489317" sideWeight="0.672179" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -278,7 +286,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3280943" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32782102" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -401,21 +409,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Module4-tutorial-a/mulhern+442a.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="159" selection-end="159" vertical-scroll-proportion="0.015337423">
-          <folding />
-        </state>
+        <state line="4" column="34" selection-start="159" selection-end="159" vertical-scroll-proportion="0.015337423" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Module Four - Team 4/team4+task442.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="16" selection-start="393" selection-end="393" vertical-scroll-proportion="0.015337423">
-          <folding />
-        </state>
+        <state line="16" column="16" selection-start="393" selection-end="393" vertical-scroll-proportion="0.015337423" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/d3.v2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="632" column="3" selection-start="19147" selection-end="19147" vertical-scroll-proportion="0.0">
+        <state line="632" column="3" selection-start="19147" selection-end="19147" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/team4-task4.4.4/team4+task444.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="12" selection-start="886" selection-end="886" vertical-scroll-proportion="0.38343558">
           <folding />
         </state>
       </provider>
