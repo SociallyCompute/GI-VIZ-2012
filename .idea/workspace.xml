@@ -1,27 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/team4-task4.4.4/team4+task444.html" line="17" mnemonic="8" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7873b57c-cdaf-4510-9ff9-a77f495d067d" name="Default" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module 4 - Team 2/module4Code.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Team 3/Team3+4.3+MorseCode.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Team 4/DayGreeting.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Team 4/mulhern+442.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Team 4/team4+task442.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Team One/Suen+441+practice.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Team One/d3.v2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Team One/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Team One/team1_mod442_d3Modified.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four --Team 5/Form_Practice.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four --Team 5/d3Modified.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four --Team 5/handle_form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module4-tutorial-a/mulhern+442a.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ModuleFour-Team4.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Stickler-viz-example.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tang-facebook-login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tang-viz-test-two.html" />
-      <change type="DELETED" beforePath="C:\Users\Francis\academic\INFO655\GI-VIZ-2012\CareyUploadTest.php" afterPath="" />
+    <list default="true" id="7873b57c-cdaf-4510-9ff9-a77f495d067d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Slaughter-Facebook_Login/login.php" afterPath="$PROJECT_DIR$/Slaughter-Facebook_Login/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team4-task4.4.4/team4+task444.html" afterPath="$PROJECT_DIR$/team4-task4.4.4/team4+task444.html" />
     </list>
     <ignored path="GI-VIZ-2012.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="team1_mod442_d3Modified.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Module Four - Team One/team1_mod442_d3Modified.html">
+      <file leaf-file-name="team4+task444.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/team4-task4.4.4/team4+task444.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="71" selection-start="475" selection-end="475" vertical-scroll-proportion="0.02685624">
+            <state line="21" column="38" selection-start="793" selection-end="793" vertical-scroll-proportion="-0.18404908">
               <folding />
             </state>
           </provider>
@@ -81,15 +66,16 @@
         <option value="$PROJECT_DIR$/Module Four - Team 4/team4-task442.html" />
         <option value="$PROJECT_DIR$/Module Four - Team One/Tze+441.html" />
         <option value="$PROJECT_DIR$/Module Four - Team One/team1_mod442_d3Modified.html" />
+        <option value="$PROJECT_DIR$/team4-task4.4.4/team4+task444.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Unnamed" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="1176" />
+    <option name="x" value="-1" />
+    <option name="y" value="25" />
+    <option name="width" value="1922" />
+    <option name="height" value="1180" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -146,91 +132,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Slaughter-Facebook_Login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GI-VIZ-2012" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GI-VIZ-2012" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Module Four --Team 5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GI-VIZ-2012" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GI-VIZ-2012" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Module Four - Team 4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GI-VIZ-2012" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GI-VIZ-2012" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Module Four - Team 3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GI-VIZ-2012" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GI-VIZ-2012" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Module Four - Team One" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GI-VIZ-2012" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GI-VIZ-2012" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Li-Facebook-Login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GI-VIZ-2012" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GI-VIZ-2012" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="team4-task4.4.4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -245,12 +147,8 @@
   </component>
   <component name="PublishConfig">
     <servers>
-      <server id="69f37c0d-0a5c-420c-b298-1d2bcb1735c2">
-        <serverdata>
-          <mappings>
-            <mapping deploy="INFO655" local="$PROJECT_DIR$" web="INFO655" />
-          </mappings>
-        </serverdata>
+      <server id="abc3277a-2613-4363-8879-efbf76c76143">
+        <serverdata />
       </server>
     </servers>
   </component>
@@ -271,7 +169,7 @@
       <method />
     </configuration>
     <configuration default="false" name="Module Four - Team One" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true" scope="Directory" path="$PROJECT_DIR$/Module Four - Team One">
-      <TestRunner directory="$PROJECT_DIR$/Module Four - Team One" />
+      <TestRunner directory="$PROJECT_DIR$/Module Four - Team One" file="$PROJECT_DIR$/Module Four - Team One" />
       <RunnerSettings RunnerId="PhpRunner" />
       <ConfigurationWrapper RunnerId="PhpRunner" />
       <method />
@@ -373,25 +271,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
+    <frame x="-1" y="25" width="1922" height="1180" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3280943" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879376" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15592784" sideWeight="0.6719057" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2275641" sideWeight="0.672179" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907662" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976654" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907662" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32782102" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -431,7 +329,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding team 4's code for task 4.4.4!&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -451,6 +349,7 @@
     <MESSAGE value="Updating code per 4.2.2" />
     <MESSAGE value="Updating code per 4.4.2" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
+    <MESSAGE value="Adding team 4's code for task 4.4.4!&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -476,11 +375,6 @@
         <state line="953" column="9" selection-start="32833" selection-end="32833" vertical-scroll-proportion="1.1687117" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Module4-tutorial-a/mulhern+442a.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Module Four - Team 3/Team3+4.3+MorseCode.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.8459152" />
@@ -488,23 +382,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Module Four - Team One/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="387" selection-end="387" vertical-scroll-proportion="0.24683544">
-          <folding />
-        </state>
+        <state line="14" column="24" selection-start="387" selection-end="387" vertical-scroll-proportion="0.24683544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Module Four - Team One/d3.v2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Module Four - Team 4/DayGreeting.php">
@@ -512,42 +400,34 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Module Four - Team 4/mulhern+442.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="315" selection-end="338" vertical-scroll-proportion="0.123061016">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Module Four --Team 5/d3Modified.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module Four - Team 4/team4+task442.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="39" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.82165605">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module Four - Team One/Suen+441+practice.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.3867632">
-          <folding>
-            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#2;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#script#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#3;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Module Four - Team One/team1_mod442_d3Modified.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="71" selection-start="475" selection-end="475" vertical-scroll-proportion="0.02685624">
+        <state line="11" column="0" selection-start="404" selection-end="404" vertical-scroll-proportion="0.16871166" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module4-tutorial-a/mulhern+442a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="34" selection-start="159" selection-end="159" vertical-scroll-proportion="0.015337423" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module Four - Team 4/team4+task442.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="16" selection-start="393" selection-end="393" vertical-scroll-proportion="0.015337423" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/d3.v2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="632" column="3" selection-start="19147" selection-end="19147" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/team4-task4.4.4/team4+task444.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="38" selection-start="793" selection-end="793" vertical-scroll-proportion="-0.18404908">
           <folding />
         </state>
       </provider>
