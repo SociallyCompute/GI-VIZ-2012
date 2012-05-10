@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/team4-task4.4.4/team4+task444.html" line="17" mnemonic="8" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7873b57c-cdaf-4510-9ff9-a77f495d067d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -28,7 +31,7 @@
       <file leaf-file-name="team4+task444.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/team4-task4.4.4/team4+task444.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="12" selection-start="886" selection-end="886" vertical-scroll-proportion="0.38343558">
+            <state line="21" column="38" selection-start="793" selection-end="793" vertical-scroll-proportion="-0.18404908">
               <folding />
             </state>
           </provider>
@@ -100,6 +103,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -134,7 +138,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -182,13 +185,6 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method>
         <option name="FtpUpload" enabled="false">
@@ -197,6 +193,13 @@
         </option>
         <option name="PhingTarget" enabled="false" />
       </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
     </configuration>
     <configuration default="false" name="viz-test-two.html" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
@@ -275,7 +278,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879376" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22489317" sideWeight="0.672179" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2275641" sideWeight="0.672179" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -424,7 +427,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/team4-task4.4.4/team4+task444.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="12" selection-start="886" selection-end="886" vertical-scroll-proportion="0.38343558">
+        <state line="21" column="38" selection-start="793" selection-end="793" vertical-scroll-proportion="-0.18404908">
           <folding />
         </state>
       </provider>

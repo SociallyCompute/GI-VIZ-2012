@@ -15,7 +15,8 @@
             display: inline-block;
             width: 30px;
             margin-right: 3px;
-            background: #47997c; color:white;
+            /*background: #47997c; */
+            color:black;
             border:4px outset #7c9981;
             border-bottom:1px solid #000;
             border-radius:4px 4px 0 0;
@@ -69,6 +70,12 @@
                     }
             )
             .style("opacity", 0)
+            .style("background",
+                    function(data) {
+                        if(data.bar>4000) { return "#FF9999";}
+                        if(data.bar>2000) { return "#FFFF80";}
+                        if(data.bar>0) { return "#ADEBAD";}
+                    })
             .append("h2");
 
             d3.selectAll("h2")
