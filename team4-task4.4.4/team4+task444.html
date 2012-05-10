@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Mulhern - Module 4.4.4</title>
+    <script type="text/javascript" src="css/d3.v2.js?2.8.1"></script>
+    <style type="text/css">
+
+        @import url("css/style.css?1.10.0");
+        @import url("css/syntax.css?1.6.0");
+
+        #playground { background:#eee; text-align:center; padding-top:50px; }
+        .bar {
+            display: inline-block;
+            width: 30px;
+            margin-right: 3px;
+            background: #47997c; color:white;
+            border:4px outset #7c9981;
+            border-bottom:1px solid #000;
+            border-radius:4px 4px 0 0;
+            vertical-align:bottom;
+            font-family:sans-serif; font-size:10px
+        }
+
+        h2 {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            color:black;
+            font-family:sans-serif; font-size:10px
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="playground">
+
+
+</div>
+
+    <script type='text/javascript'>
+
+
+        d3.csv("catchingfire-hashtag-timeline.csv", function(csv) {
+            var data = [];
+            csv.forEach(function(x) {
+                var d = {
+                    "bar" : parseInt(x.bar),
+                    "title" : x.title,
+                    "date" : x.date
+                };
+
+                data.push(d);
+                return data;
+
+            });
+
+            var transitionDurationMS = 200;
+            var divs = d3.select("#playground").selectAll("div").data(data);
+
+
+            divs.enter().append("div")
+            .attr("class", "bar")
+            .text(
+                    function (data) {
+                        return data.bar;
+                    }
+            )
+            .style("opacity", 0)
+            .append("h2");
+
+            d3.selectAll("h2")
+            .text(
+                function (data) {
+                    return data.date;
+                }
+            )
+            .style("color", "black")
+            .attr("style", function(data) { return "position:relative; top:"+data.bar*.09+"px"; });
+
+            divs.exit().transition().duration(transitionDurationMS)
+            .style("opacity", 0)
+            .remove();
+
+            divs.transition().duration(transitionDurationMS)
+            .style("opacity",1)
+            .style("height", function(d){ return d.bar*.09+"px" })
+            .text(ƒ('toFixed'));
+
+        });
+
+    </script>
+</body>
+</html>
