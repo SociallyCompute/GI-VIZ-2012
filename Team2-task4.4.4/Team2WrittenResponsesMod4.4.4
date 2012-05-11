@@ -1,0 +1,15 @@
+TEAM 2
+
+1a.
+A blue circle represents a male; pink represents a female.
+Each element of the data array is a record. Each record has the attributes id, sex, age, height and weight. The �sex� attribute is used by css and d3.js  components to determine the color of a given circle. The CSS specifies two circle classes: �circle.m� for male and �circle.f� for female. The CSS also specifies the color coding for both classes in hex.  As the d3.js code pulls in a record from the array it grabs the �sex� value (�f� or �m�), which maps to a corresponding CSS class.  The class returns the appropriate stroke and fill for a bubble.
+
+1b.
+BMI - body mass index - The radius of the circle is set by
+.attr('r', function(d){ return Math.pow(bmi(d),3)/15000 }),
+ where BMI is the function
+bmi(datum){ return datum.weight / Math.pow(datum.height/100,2);}
+
+
+2a.
+Data (d - 20, 40, 60, 80, 100) is the initial value for each data point.  The page shows bars relative to each other using these points.  CSS provides for the background color (white), the bar�s width and the bevel making them appear in 3D.  The font used is sans-serif in a 10 point size. The transition duration is 200 milliseconds.  The divs array (d3)  contains all the data elements.  The enter function takes d3 as an argument and changes the opacity value to  0.  The exit function removes the bar over transitionDurationMS period.  The final bit of CSS creates a new bar in the height defined by d*2 in pixels.  It then sets the text to the height value in pixels.
