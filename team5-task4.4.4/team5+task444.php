@@ -33,7 +33,7 @@
 
 <script type='text/javascript'>
 
-    d3.csv("catchingfire-hashtag-timeline1.csv", function(csv) {
+    d3.csv("catchingfire-hashtag-timeline.csv", function(csv) {
         var data = [];
         csv.forEach(function(row) {
             var d = {
