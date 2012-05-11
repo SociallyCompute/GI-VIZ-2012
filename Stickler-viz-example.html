@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <title>d3.js ~ Three Little Circles</title>
+    <title>d3.js ~ Six Little Circles</title>
     <script type="text/javascript" src="css/d3.v2.js?2.8.1"></script>
     <style type="text/css">
 
@@ -23,8 +24,8 @@
     <h1>d3.js</h1>
 </div>
 
-<h1 id='three_little_circles'>Three Little Circles</h1>
-<style type='text/css'>
+<h1 id='three_little_circles'>Six Little Circles</h1>
+<style type='text/css' scoped="">
 
     .chart {
         background: #fff;
@@ -72,15 +73,15 @@
 
 </style>
 <script type='text/javascript'>
-    var data = [32, 57, 112, 114, 215, 489],
-            dataEnter = data.concat(293),
+    var data = [32, 57, 112, 250, 350, 450],
+            dataEnter = data.concat(250),
             dataExit = data.slice(0, 2),
             w = 360,
             h = 180,
-            x = d3.scale.ordinal().domain([57, 32, 112]).rangePoints([0, w], 1),
+            x = d3.scale.ordinal().domain([57, 32, 112, 250, 350, 450]).rangePoints([0, w], 1),
             y = d3.scale.ordinal().domain(data).rangePoints([0, h], 2);
 </script>
-<p>Once upon a time, there were three little circles. This tutorial shows you how to manipulate them using
+<p>Once upon a time, there were six little circles. This tutorial shows you how to manipulate them using
     selections.</p>
 
 <h2 id='selecting_elements'>Selecting Elements</h2>
@@ -137,7 +138,7 @@ var circle = svg.selectAll("circle");
 <div class='chart' id='chart-3'>
 <pre class='code'>
 circle.style("fill", "steelblue");
-circle.attr("cy", 90);
+circle.attr("cy", 150);
 circle.attr("r", 30);
 </pre>
     <button>Run</button>
@@ -159,7 +160,7 @@ circle.attr("r", 30);
         d3.select("#chart-3 button").on("click", function () {
             circle.style("fill", "#aaa").attr("r", 12).attr("cy", y);
             circle.transition().duration(500).delay(0).style("fill", "steelblue");
-            circle.transition().duration(500).delay(500).attr("cy", 90);
+            circle.transition().duration(500).delay(500).attr("cy", 150);
             circle.transition().duration(500).delay(1000).attr("r", 30);
         });
     })();
@@ -206,13 +207,13 @@ circle.attr("cx", function() {
 
 <p>This is beginning to look a lot like <a href='http://jquery.com/'>jQuery</a>. More commonly, though, we want to use
     <em>data</em> to drive the appearance of our circles. To do that, we need some data. For the sake of example, let&#8217;s
-    imagine that each of these circles represents a number: 32, 57 and 112. The <a
+    imagine that each of these circles represents a number: 32, 57, 112, 250, 350 and 450. The <a
             href='https://github.com/mbostock/d3/wiki/Selections#data'>data</a> operator binds these numbers to the
     circles:</p>
 
 <div class='chart' id='chart-5'>
 <pre class='code'>
-circle.data([32, 57, 112]);
+circle.data([32, 57, 112, 250, 350, 450]);
 </pre>
     <button>Run</button>
 </div>
@@ -386,13 +387,13 @@ circle.attr("cx", function(d, i) {
 <p>But what if we had <em>four</em> numbers to display, rather than three? We wouldn&#8217;t have enough circles to
     display all the numbers. When joining data to elements, D3 stores the leftover data in the <a
             href='https://github.com/mbostock/d3/wiki/Selections#enter'>enter</a> selection. (The terms &#8220;enter&#8221;
-    and &#8220;exit&#8221; are adopted from stage terminology.) Here, the fourth number 293 remains in the enter
+    and &#8220;exit&#8221; are adopted from stage terminology.) Here, the fourth number 250 remains in the enter
     selection, because we only have three circle elements:</p>
 
 <div class='chart' id='chart-7'>
 <pre class='code'>
 var circle = svg.selectAll("circle")
-    .data([32, 57, 112, 293]);
+    .data([32, 57, 250]);
 </pre>
     <button>Run</button>
 </div>
@@ -621,7 +622,7 @@ enter.attr("r", function(d) {
 <div class='chart' id='chart-10'>
 <pre class='code'>
 svg.selectAll("circle")
-    .data([32, 57, 112, 293])
+    .data([32, 57, 112, 250, 350, 450])
   .enter().append("circle")
     .attr("cy", 90)
     .attr("cx", String)
@@ -697,7 +698,7 @@ svg.selectAll("circle")
 <div class='chart' id='chart-11'>
 <pre class='code'>
 var circle = svg.selectAll("circle")
-    .data([32, 57]);
+    .data([32, 57, 112, 250, 350, 450]);
 </pre>
     <button>Run</button>
 </div>
@@ -838,7 +839,7 @@ circle.exit().remove();
 <div class='chart' id='chart-13'>
 <pre class='code'>
 var circle = svg.selectAll("circle")
-    .data([32, 57, 293], String);
+    .data([32, 57, 250], String);
 
 circle.enter().append("circle")
     .attr("cy", 90)
@@ -856,7 +857,7 @@ circle.exit().remove();
                 .attr("height", h);
 
         var gd = svg.selectAll(".data")
-                .data([32, 57, 293])
+                .data([32, 57, 250])
                 .enter().append("g")
                 .attr("class", "data")
                 .attr("transform", function (d, i) {
@@ -956,7 +957,6 @@ circle.exit().remove();
 
 </div>
 <div class="foot">Copyright &copy; 2011 <a href="http://bost.ocks.org/mike">Mike Bostock</a></div>
-</div>
 </div>
 
 </body>

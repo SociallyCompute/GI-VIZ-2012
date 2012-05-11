@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
@@ -72,7 +73,7 @@
 
 </style>
 <script type='text/javascript'>
-    var data = [32, 57, 112, 114, 215, 489],
+    var data = [32, 57, 112, 45, 60, 180],
             dataEnter = data.concat(293),
             dataExit = data.slice(0, 2),
             w = 360,
@@ -137,7 +138,7 @@ var circle = svg.selectAll("circle");
 <div class='chart' id='chart-3'>
 <pre class='code'>
 circle.style("fill", "steelblue");
-circle.attr("cy", 90);
+circle.attr("cy", 150);
 circle.attr("r", 30);
 </pre>
     <button>Run</button>
@@ -159,7 +160,7 @@ circle.attr("r", 30);
         d3.select("#chart-3 button").on("click", function () {
             circle.style("fill", "#aaa").attr("r", 12).attr("cy", y);
             circle.transition().duration(500).delay(0).style("fill", "steelblue");
-            circle.transition().duration(500).delay(500).attr("cy", 90);
+            circle.transition().duration(500).delay(500).attr("cy", 150);
             circle.transition().duration(500).delay(1000).attr("r", 30);
         });
     })();
@@ -252,8 +253,8 @@ circle.data([32, 57, 112]);
         d3.select("#chart-5 button").on("click", function () {
             g
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .select("rect")
                     .style("opacity", 1);
 
@@ -312,8 +313,8 @@ circle.attr("r", function(d) {
         d3.select("#chart-6 button").on("click", function () {
             g
                     .attr("transform", function (d) {
-                return "translate(" + x(d) + "," + y(d) + ")";
-            })
+                        return "translate(" + x(d) + "," + y(d) + ")";
+                    })
                     .select("circle")
                     .attr("r", 12);
 
@@ -367,8 +368,8 @@ circle.attr("cx", function(d, i) {
         d3.select("#chart-6b button").on("click", function () {
             g
                     .attr("transform", function (d) {
-                return "translate(" + x(d) + "," + y(d) + ")";
-            })
+                        return "translate(" + x(d) + "," + y(d) + ")";
+                    })
                     .transition()
                     .duration(750)
                     .attr("transform", function (d, i) {
@@ -432,8 +433,8 @@ var circle = svg.selectAll("circle")
         d3.select("#chart-7 button").on("click", function () {
             g
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .select("rect")
                     .style("opacity", 1);
 
@@ -740,8 +741,8 @@ var circle = svg.selectAll("circle")
         d3.select("#chart-11 button").on("click", function () {
             g
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .select("rect")
                     .style("opacity", 1);
 
@@ -864,8 +865,8 @@ circle.exit().remove();
                 });
 
         var ed = gd.filter(function (d, i) {
-            return i == 2;
-        }),
+                    return i == 2;
+                }),
                 ud = gd.filter(function (d, i) {
                     return i != 2;
                 });
@@ -917,8 +918,8 @@ circle.exit().remove();
         d3.select("#chart-13 button").on("click", function () {
             gd
                     .attr("transform", function (d, i) {
-                return "translate(" + 20 * (i + 1) + ",20)";
-            })
+                        return "translate(" + 20 * (i + 1) + ",20)";
+                    })
                     .transition()
                     .duration(750)
                     .attr("transform", function (d) {
@@ -958,6 +959,5 @@ circle.exit().remove();
 <div class="foot">Copyright &copy; 2011 <a href="http://bost.ocks.org/mike">Mike Bostock</a></div>
 </div>
 </div>
-
 </body>
 </html>
