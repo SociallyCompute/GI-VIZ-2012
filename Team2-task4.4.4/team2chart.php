@@ -5,6 +5,8 @@
  * Date: 5/10/12
  * Time: 9:29 PM
  * To change this template use File | Settings | File Templates.
+ *
+ * We modified the code from https://gist.github.com/1219845 to produce this file.
  */
 
 
@@ -16,6 +18,7 @@
 <html>
 <head>
     <title>Team 2 Bar Chart</title>
+    <h1>Catching Fire Timeline (April, 2012)</h1>
     <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?2.1.3"></script>
     <script type="text/javascript" src="http://mbostock.github.com/d3/d3.geom.js?2.1.3"></script>
     <script type="text/javascript" src="http://mbostock.github.com/d3/d3.layout.js?2.1.3"></script>
