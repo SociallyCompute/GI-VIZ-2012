@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Scale Graph</title>
+    <title>Colin Smith's Scale Graph Example</title>
 </head>
 <body>
-/*this is a commnet*/
+<h1>Colin Smith's Scale Graph Example</h1>
+
 <div id="demoContainer">
     <div id="option">
-        <input name="updateButton" type="button" value="Update" onclick="updateData()"/>
+        <input name="updateButton" type="button" value="Get New Values" onclick="updateData()"/>
     </div>
     <div id="mainGraph">
     </div>
@@ -15,11 +16,11 @@
 <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?1.27.1"></script>
 <script type="text/javascript">
 /* Global variables */
-9
+
 /* Definition code */
 function randomData() {
     return d3.range(10).map(function (i) {
-        return {x:i / 9, y:Math.random()};
+        return {x:Math.random(), y:Math.random()};
     });
 }
 
@@ -190,15 +191,15 @@ var initData = function () {
             .data(data)
             .enter().append("svg:path")
             .attr("class", "dot")
-            .style("fill", "white")
+            .style("fill", "black")
             .style("stroke-width", "1.5px")
-            .attr("stroke", "#9acd32")
+            .attr("stroke", "blue")
             .attr("transform", function (d) {
                 return "translate(" + x(d.x) + "," + y(d.y) + ")";
             })
             .attr("d", d3.svg.symbol())
             .on("mouseover", function (d, i) {
-                d3.select(this).transition().duration(300).style("fill", "#00ffff");
+                d3.select(this).transition().duration(300).style("fill", "red");
             })
             .on("mouseout", function (d, i) {
                 d3.select(this).transition().duration(300).style("fill", "white");
@@ -209,7 +210,7 @@ var initData = function () {
             .text(function (d) {
                 return "X: " + d.x.toFixed(3) + ", Y: " + d.y.toFixed(3);
             });
-}
+};
 
 /* UI Events */
 /* Execution code */
