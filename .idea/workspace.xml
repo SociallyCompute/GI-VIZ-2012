@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7873b57c-cdaf-4510-9ff9-a77f495d067d" name="Default" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four --Team 5/team5-task4.4.4/catchingfire-hashtag-timeline.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/team4-task4.4.4/catchingfire-hashtag-timeline.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Task 4.4.4 - Suen/Task444.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Task 4.4.4 - Suen/catchingfire-hashtag-timeline.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Task 4.4.4 - Suen/d3.v2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Team 3/Team3_Task_4_4_4.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Team 3/catchingfire-hashtag-timeline.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Team One/catchingfire-hashtag-timeline.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four - Team One/team1-task4.4.4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four --Team 5/team5-task4.4.4/css/d3.v2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four --Team 5/team5-task4.4.4/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four --Team 5/team5-task4.4.4/css/syntax.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module Four --Team 5/team5-task4.4.4/team5+task444.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module4-tutorial-a/rocco-442a.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/team4-task4.4.4/css/d3.v2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/team4-task4.4.4/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/team4-task4.4.4/css/syntax.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/team4-task4.4.4/team4+task444.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/team5-task4.4.4/css/Style.css" />
-      <change type="MOVED" beforePath="C:\Users\Francis\academic\INFO655\GI-VIZ-2012\Module Four - Team One\Suen+442.html" afterPath="$PROJECT_DIR$/Module Four - Task 4.4.4 - Suen/Suen+442.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module 4.5/Suen-Team3-4.5.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Module 4.5/catchingfire-hashtag-timeline.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GI-VIZ-2012.iws" />
@@ -44,10 +26,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="d3.v2.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Module Four - Task 4.4.4 - Suen/d3.v2.js">
+      <file leaf-file-name="tang-viz-test-two.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tang-viz-test-two.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Team3_Task_4_4_4.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Module Four - Team 3/Team3_Task_4_4_4.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="12" selection-start="769" selection-end="769" vertical-scroll-proportion="-17.653847">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task444.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Module Four - Task 4.4.4 - Suen/Task444.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="38" selection-start="653" selection-end="653" vertical-scroll-proportion="1.3951368">
               <folding />
             </state>
           </provider>
@@ -71,6 +71,9 @@
     <option name="UPDATE_CHANGES_POLICY" value="STASH" />
     <option name="LINE_SEPARATORS_CONVERSION" value="ASK" />
   </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -83,6 +86,7 @@
         <option value="$PROJECT_DIR$/Module Four - Team One/Tze+441.html" />
         <option value="$PROJECT_DIR$/Module Four - Team One/team1_mod442_d3Modified.html" />
         <option value="$PROJECT_DIR$/Module Four - Task 4.4.4 - Suen/Task444.php" />
+        <option value="$PROJECT_DIR$/Module 4.5/Suen-Team3-4.5.php" />
       </list>
     </option>
   </component>
@@ -148,7 +152,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Module Four - Team One" />
+              <option name="myItemId" value="Module 4.5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GI-VIZ-2012" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GI-VIZ-2012" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Module Four - Task 4.4.4 - Suen" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -158,8 +176,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -179,11 +197,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Francis\academic\INFO655\GI-VIZ-2012\Module 4.5" />
       <recent name="C:\Users\Francis\academic\INFO655\GI-VIZ-2012\Module Four - Task 4.4.4 - Suen" />
       <recent name="C:\Users\Francis\academic\INFO655\GI-VIZ-2012\Module Four - Team One" />
       <recent name="C:\Users\DStickler\Desktop\GI-VIZ-2012" />
       <recent name="G:\PHP_project_git\GI-VIZ-2012" />
-      <recent name="G:\Ampps\apache\htdocs" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.Task444.php">
@@ -216,13 +234,6 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method>
         <option name="FtpUpload" enabled="false">
@@ -231,6 +242,13 @@
         </option>
         <option name="PhingTarget" enabled="false" />
       </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
     </configuration>
     <configuration default="false" name="viz-test-two.html" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
@@ -308,16 +326,16 @@
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.67235494" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39605463" sideWeight="0.67235494" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.67235494" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.400607" sideWeight="0.67064846" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -387,33 +405,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Slaughter-viz-example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="31" selection-start="818" selection-end="818" vertical-scroll-proportion="0.020070838" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Stickler-viz-example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="953" column="9" selection-start="32833" selection-end="32833" vertical-scroll-proportion="1.1687117" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module4-tutorial-a/mulhern+442a.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module Four - Team 3/Team3+4.3+MorseCode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.8459152" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Module Four - Team One/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="24" selection-start="387" selection-end="387" vertical-scroll-proportion="0.24683544" />
@@ -436,16 +427,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Module Four - Team 4/team4+task442.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="39" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.82165605">
-          <folding />
-        </state>
+        <state line="68" column="39" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.82165605" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Module Four - Team 3/catchingfire-hashtag-timeline.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Module Four - Team One/team1-task4.4.4.html">
@@ -464,21 +451,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Module Four - Task 4.4.4 - Suen/catchingfire-hashtag-timeline.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module Four - Task 4.4.4 - Suen/Task444.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="209" selection-end="209" vertical-scroll-proportion="-1.2121212">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Module Four - Task 4.4.4 - Suen/d3.v2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/team4-task4.4.4/team4+task444.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tang-viz-test-two.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module Four - Team 3/Team3_Task_4_4_4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="12" selection-start="769" selection-end="769" vertical-scroll-proportion="-17.653847">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module 4.5/catchingfire-hashtag-timeline.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module 4.5/Suen-Team3-4.5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="46" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.41682243">
+          <folding>
+            <element signature="tag#style#0;tag#head#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module Four - Task 4.4.4 - Suen/Task444.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="38" selection-start="653" selection-end="653" vertical-scroll-proportion="1.3951368">
           <folding />
         </state>
       </provider>
