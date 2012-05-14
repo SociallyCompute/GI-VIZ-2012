@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ExportToHTMLSettings">
-    <option name="OUTPUT_DIRECTORY" value="E:\Info655\GI-VIZ-2012\exportToHTML" />
-  </component>
   <component name="ProjectResources">
     <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
   </component>
