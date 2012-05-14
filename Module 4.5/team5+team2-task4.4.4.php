@@ -129,7 +129,7 @@ Modification: We decided to change the bar color to white and move the labels in
 The following code was changed:
 1.
 .bar rect {
-            fill: black; //Changed black to white
+            fill: black; /*changed from black to white*/
             stroke: black;
         }
 
@@ -154,7 +154,7 @@ The following code was changed:
     <script type="text/javascript" src="http://mbostock.github.com/d3/d3.layout.js?2.1.3"></script>
     <style type="text/css">
         .bar rect {
-            fill: white; /*changed from from black*/
+            fill: white; /*changed from black*/
             stroke: black;
         }
 
