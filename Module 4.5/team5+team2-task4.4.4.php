@@ -83,10 +83,14 @@ We took out comments such as:
     	.attr("class", "barchart");
 
 Suggestion 3: Simplify some of the code
-Sample: Suggstion 3: simplify code:
+
 
 Ex. 1:  reading the external file for data:
-While the method Team 2 used worked, they could have implemented their code in a much simpler way for better readability. One example is to add the headings to the columns in the csv file and then use the below d3 function.
+
+While the method Team 2 used worked, they could have implemented
+their code in a much simpler way for better readability.
+One example is to add the headings to the columns in the csv
+file and then use the below d3 function.
 
 d3.csv("catchingfire-hashtag-timeline.csv", function(csv) {
     var data = [];
