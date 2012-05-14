@@ -118,11 +118,11 @@ to this: var margin {left:80, right: 80, top:30, bottom:0},
 Ex. 3
 // Really hard to read  - this could be explained better
 var x = d3.scale.linear()
-.domain([0, data_max])---------domain([0, data.length])
+.domain([0, data_max])
 .range([0, w - ( left_margin + right_margin ) ]);
 
 var y = d3.scale.ordinal()
-.domain(d3.range(data.length))----------domain([0, ])
+.domain(d3.range(data.length))
 .rangeBands([bottom_margin, h - top_margin], .5);
 
 
