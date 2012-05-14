@@ -37,6 +37,7 @@
     </style>
 </head>
 <body>
+<!-added this timeline (minor mod)- SS!>
 <h1>2012 Catching Fire Timeline</h1>
 <div id="playground">
 
@@ -99,7 +100,7 @@
 
         });
         //this is the D3 code for inserting a legend.  Found it here: http://www.verisi.com/resources/d3-tutorial-basic-charts.htm#s5
-        //It prints out the text ranges for the Catching Fire Values, but not the colors.
+        //Prints a legend for the Catching Fire value ranges. -SS
 
 
 
