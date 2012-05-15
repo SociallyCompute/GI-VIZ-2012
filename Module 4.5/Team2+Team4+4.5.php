@@ -125,8 +125,8 @@ d3.csv("catchingfire-hashtag-timeline.csv", function(csv) {
         });
 
 
-//this is the D3 code for inserting a legend.  Found it here: http://www.verisi.com/resources/d3-tutorial-basic-charts.htm#s5
-//Prints a legend for the Catching Fire value ranges. -Team 2(SS)
+//This is the D3 code for displaying a legend.  Found it here: http://www.verisi.com/resources/d3-tutorial-basic-charts.htm#s5
+//Customized to suit this application.  -Team 2 (SS)
 
 
 
