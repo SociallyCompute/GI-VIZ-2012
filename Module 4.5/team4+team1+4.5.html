@@ -99,6 +99,8 @@ Suggestion #3 - Add more ticks to the x axis since data falls mostly under 2000:
             .tickSize(-height);
 
 
+NOTE: Modified code to use the headings defined in the CSV file in this directory (Team 1 originally used different headings)
+
 -->
 
 <!DOCTYPE html>
@@ -193,15 +195,15 @@ Suggestion #3 - Add more ticks to the x axis since data falls mostly under 2000:
 
         // Parse numbers.  Removed sort by value to organize data by date. - Colin
         data.forEach(function (d) {
-            d.value = +d.value;
+            d.Counts = +d.Counts;
         });
 
         // Set the scale domain.
         x.domain([0, d3.max(data, function (d) {
-            return d.value;
+            return d.Counts;
         })]);
         y.domain(data.map(function (d) {
-            return d.date;
+            return d.Date;
         }));
 
         var bar = svg.selectAll("g.bar")
@@ -209,26 +211,26 @@ Suggestion #3 - Add more ticks to the x axis since data falls mostly under 2000:
                 .enter().append("g")
                 .attr("class", "bar")
                 .attr("transform", function (d) {
-                    return "translate(0," + y(d.date) + ")";
+                    return "translate(0," + y(d.Date) + ")";
                 });
 
         bar.append("rect")
                 .attr("width", function (d) {
-                    return x(d.value);
+                    return x(d.Counts);
                 })
                 .attr("height", y.rangeBand());
 
         bar.append("text")
                 .attr("class", "value")
                 .attr("x", function (d) {
-                    return x(d.value);
+                    return x(d.Counts);
                 })
                 .attr("y", y.rangeBand() / 2)
                 .attr("dx", -3)
                 .attr("dy", ".35em")
                 .attr("text-anchor", "end")
                 .text(function (d) {
-                    return format(d.value);
+                    return format(d.Counts);
                 });
 
         svg.append("g")
