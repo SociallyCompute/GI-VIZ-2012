@@ -10,8 +10,6 @@
         @import url("css/style.css?1.10.0");
         @import url("css/syntax.css?1.6.0");
 
-
-
         #playground { background:#eee; text-align:center; padding-top:50px; }
         .bar {
             display: inline-block;
@@ -37,15 +35,15 @@
     </style>
 </head>
 <body>
-<!-added this timeline (minor mod)- SS!>
-<h1>2012 Catching Fire Timeline</h1>
+
 <div id="playground">
+
 
 </div>
 
     <script type='text/javascript'>
 
-
+/* Original code
         d3.csv("catchingfire-hashtag-timeline.csv", function(csv) {
             var data = [];
             csv.forEach(function(x) {
@@ -59,6 +57,32 @@
                 return data;
 
             });
+*/
+
+/*
+
+ Team 2 added a function to generate random numbers between 0 and 7000.
+ The function is called in the section below to provide the bar value rather than using the value in the csv.
+
+*/
+
+function randomData() {
+        return Math.floor(Math.random()*7001)
+}
+
+d3.csv("catchingfire-hashtag-timeline.csv", function(csv) {
+                var data = [];
+                csv.forEach(function(x) {
+                    var d = {
+                        "bar" : randomData(),
+                        "title" : x.title,
+                        "date" : x.date
+                    };
+
+                    data.push(d);
+                    return data;
+
+                });
 
             var transitionDurationMS = 200;
             var divs = d3.select("#playground").selectAll("div").data(data);
@@ -99,54 +123,60 @@
             .text(ƒ('toFixed'));
 
         });
-        //this is the D3 code for inserting a legend.  Found it here: http://www.verisi.com/resources/d3-tutorial-basic-charts.htm#s5
-        //Prints a legend for the Catching Fire value ranges. -SS
+
+
+//this is the D3 code for inserting a legend.  Found it here: http://www.verisi.com/resources/d3-tutorial-basic-charts.htm#s5
+//Prints a legend for the Catching Fire value ranges. -SS
 
 
 
-        var vis = d3.select("div")
-            .append("svg:svg")
-            .attr("class", "chart")
-            .attr("width", 150)
-            .attr("height", 500);
+var vis = d3.select("div")
+    .append("svg:svg")
+    .attr("class", "chart")
+    .attr("width", 150)
+    .attr("height", 500);
 
-        vis.append("svg:rect")
-            .attr("fill","#FF9999")
-            .attr("x", 40)
-            .attr("y", 140)
-            .attr("width", 20)
-            .attr("height", 20);
+vis.append("svg:rect")
+    .attr("fill","#FF9999")
+    .attr("x", 40)
+    .attr("y", 140)
+    .attr("width", 20)
+    .attr("height", 20);
 
-        vis.append("svg:text")
-            .attr("x", 70)
-            .attr("y", 160)
-            .text(">4000");
+vis.append("svg:text")
+    .attr("x", 70)
+    .attr("y", 160)
+    .text(">4000");
 
-        vis.append("svg:rect")
-            .attr("fill", "#FFFF80")
-            .attr("x", 40)
-            .attr("y", 110)
-            .attr("width", 20)
-            .attr("height", 20);
+vis.append("svg:rect")
+    .attr("fill", "#FFFF80")
+    .attr("x", 40)
+    .attr("y", 110)
+    .attr("width", 20)
+    .attr("height", 20);
 
-        vis.append("svg:text")
-            .attr("x", 70)
-            .attr("y", 130)
-            .text(">2000");
+vis.append("svg:text")
+    .attr("x", 70)
+    .attr("y", 130)
+    .text(">2000");
 
-        vis.append("svg:rect")
-            .attr("fill", "#ADEBAD" )
-            .attr("x", 40)
-            .attr("y", 80)
-            .attr("width", 20)
-            .attr("height", 20);
+vis.append("svg:rect")
+    .attr("fill", "#ADEBAD" )
+    .attr("x", 40)
+    .attr("y", 80)
+    .attr("width", 20)
+    .attr("height", 20);
 
-        vis.append("svg:text")
-            .attr("x", 70)
-            .attr("y", 100)
-            .text(">0");
-
+vis.append("svg:text")
+    .attr("x", 70)
+    .attr("y", 100)
+    .text(">0");
 
     </script>
+<br><br><br>
+<center>
+<input type="button" value="Reload Page" onClick="window.location.reload()">
+</center>
+
 </body>
 </html>
