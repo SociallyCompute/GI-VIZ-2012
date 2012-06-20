@@ -35,6 +35,8 @@ if ($_REQUEST['state'] == $_SESSION['state']) {
 
     $graph_url = "https://graph.facebook.com/me?access_token="
         . $params['access_token'];
+        
+        $crap = "et";
 
     $user = json_decode(file_get_contents($graph_url));
     echo("Hello " . $user->name);
